@@ -46,7 +46,6 @@ function SubscriptionPage({
   formValues,
   currentProperty,
 }) {
-  console.log(pageContext)
   const [showFill, setShowFill] = useState(true)
   const [showDownload, setShowDownload] = useState(true)
 

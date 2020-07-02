@@ -99,7 +99,6 @@ function Gallery({ data }) {
       controls: 1,
     },
   }
-  console.log(data)
   return (
     <Wrapper>
       <h2 className="mb-3">Photo Gallery</h2>

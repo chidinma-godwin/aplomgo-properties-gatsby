@@ -172,7 +172,6 @@ function Header({ width }) {
       if (prev === false) needClick = true
       return true
     })
-    console.log(needClick)
     needClick && toggleRef.current.click()
   }
 
