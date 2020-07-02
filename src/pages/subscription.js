@@ -36,6 +36,12 @@ const CustomImage = styled(Img)`
   display: block;
   margin-left: auto;
   margin-right: auto;
+  img {
+    object-fit: contain !important;
+  }
+  @media (max-width: 500px) {
+    height: fit-content;
+  }
 `
 
 function Subscription({ data }) {
