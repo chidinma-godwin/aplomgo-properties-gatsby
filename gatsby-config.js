@@ -7,14 +7,14 @@ module.exports = {
                   development Company with a vision to carry out real estate professional services and to
                   deliver competitive real estate solutions to our highly esteemed
                   clients.`,
-    siteUrl: "http://aplomgo.com",
-    image: "/images/blackLogo.jpg",
+    siteUrl: `http://aplomgo.com`,
+    image: `/images/blackLogo.jpg`,
     author: `Aplom Go. Limited`,
-    email: "info@aplomgo.com",
+    email: `info@aplomgo.com`,
     social: {
-      facebook: "https://www.facebook.com/Aplomhomes",
-      instagram: "https://instagram.com/aplomgo_aplomgo",
-      twitter: "https://twitter.com/aplomgo",
+      facebook: `https://www.facebook.com/Aplomhomes`,
+      instagram: `https://instagram.com/aplomgo_aplomgo`,
+      twitter: `https://twitter.com/aplomgo`,
     },
   },
   plugins: [
@@ -52,5 +52,15 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+  ],
+  proxy: [
+    {
+      prefix: "/api",
+      url: "http://localhost:4000",
+    },
+    {
+      prefix: "/info",
+      url: "http://localhost:4000",
+    },
   ],
 }

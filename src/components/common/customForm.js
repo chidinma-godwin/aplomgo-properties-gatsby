@@ -9,7 +9,7 @@ import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css"
 
 import ReCAPTCHA from "react-google-recaptcha"
-import PassportUploader from "./PassportUploader"
+import PassportUploader from "./passportUploader"
 
 const CustomAlert = styled.div`
   color: red;

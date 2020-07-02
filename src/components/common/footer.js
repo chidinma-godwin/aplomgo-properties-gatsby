@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "gatsby"
 import logo from "../../images/blackLogo.jpg"
 import styled from "styled-components"
-import NewsLetter from "./NewsLetter"
+import NewsLetter from "./newsLetter"
 
 const CustomFooter = styled.footer`
   background: #000;
@@ -163,9 +163,6 @@ function Footer() {
                 </QuickLink>
                 <QuickLink as={Link} className="mb-3" to="/subscription">
                   Subscription
-                </QuickLink>
-                <QuickLink as={Link} to="/information/about#account">
-                  Account Details
                 </QuickLink>
               </LinkList>
             </Col>

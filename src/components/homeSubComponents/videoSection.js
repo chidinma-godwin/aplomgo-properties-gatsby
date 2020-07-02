@@ -32,6 +32,10 @@ const VideoPlayer = styled(YouTube)`
   position: absolute;
 `
 
+const SectionHeading = styled.h2`
+  color: #b67f2e;
+`
+
 function VideoSection() {
   const data = useStaticQuery(graphql`
     query {
@@ -108,7 +112,7 @@ function VideoSection() {
         </UnLoadedVideo>
       </VideoWrapper>
       <CenteredColumn>
-        <h2>Affordable Housing for All</h2>
+        <SectionHeading>Affordable Housing for All</SectionHeading>
         <p>
           At Aplom, we are devoted to making homes affordable for everyone
           irrespective of their income

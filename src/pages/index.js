@@ -1,9 +1,9 @@
 import React from "react"
 import { Container } from "react-bootstrap"
-import JumbotronSection from "../components/homeSubComponents/JumbotronSection"
-import VideoSection from "../components/homeSubComponents/VideoSection"
-import ExclusiveOffers from "../components/homeSubComponents/ExclusiveOffers"
-import Properties from "../components/homeSubComponents/Properties"
+import JumbotronSection from "../components/homeSubComponents/jumbotronSection"
+import VideoSection from "../components/homeSubComponents/videoSection"
+import ExclusiveOffers from "../components/homeSubComponents/exclusiveOffers"
+import Properties from "../components/homeSubComponents/properties"
 
 function Home() {
   return (

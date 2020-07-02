@@ -4,7 +4,7 @@ import { navigate } from "gatsby"
 import axios from "axios"
 import { BlobProvider } from "@react-pdf/renderer"
 import SubscriptionPdf from "./subscriptionPdf"
-import CustomForm from "./common/CustomForm"
+import CustomForm from "./common/customForm"
 import { Alert } from "react-bootstrap"
 
 function SubscriptionForm({ property }) {
