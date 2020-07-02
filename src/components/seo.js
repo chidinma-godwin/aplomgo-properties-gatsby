@@ -18,7 +18,15 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
+            siteUrl
+            image
+            email
             author
+            social {
+              twitter
+              facebook
+              instagram
+            }
           }
         }
       }
