@@ -2,7 +2,7 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: `Aplomgo Real Estate`,
+    title: `Property Development & Real Estate Investment Services`,
     description: `Aplom Go is one of Nigeria’s indigenous Real Estate
                   development Company with a vision to carry out real estate professional services and to
                   deliver competitive real estate solutions to our highly esteemed

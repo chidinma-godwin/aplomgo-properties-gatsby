@@ -11,7 +11,7 @@ import SEO from "../components/seo"
 
 const Layout = ({ children }) => (
   <>
-    <SEO title="Aplom Go" />
+    <SEO title="Aplom Go." />
     <ScrollToTop />
     <Header />
     <main>{children}</main>
