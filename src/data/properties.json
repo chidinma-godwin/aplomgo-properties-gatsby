@@ -1,0 +1,780 @@
+[
+  {
+    "id": 1,
+    "shortName": "aplom-gold",
+    "name": "APLOM GOLD CITY",
+    "location": "EPOSO-REMO COMMUNITY, OGUN STATE",
+    "devFee": 100000,
+    "surveyFee": 100000,
+    "agreementFee": 50000,
+    "image": "aplom-gold-city.jpg",
+    "layout": "aplom-gold-city-layout.PNG",
+    "description": "Aplom Gold City is located at Eposo-Remo Community, Ogun State.",
+    "price": 650000,
+    "infras": [
+      "Perimeter Fencing",
+      "Earth Road",
+      "Electricity",
+      "Drainage",
+      "Water",
+      "CCTV",
+      "Children Playing Ground",
+      "Basket Ball court"
+    ],
+    "spots": [
+      "Eateries",
+      "Cinema",
+      "Salons",
+      "Supermarkets",
+      "Health Facilities",
+      "Arcade and Sport Centre",
+      "Gym and Fitness Centre"
+    ],
+    "answers": [
+      {
+        "id": 1,
+        "ans": [
+          "APLOM GOLD CITY is located at EPOSO-REMO Community, OGUN STATE. Just 10 minutes drive from Sagamu."
+        ]
+      },
+      {
+        "id": 2,
+        "ans": ["AGL. Property Development Powered by APLOM Go Limited."]
+      },
+      { "id": 3, "ans": ["Survey Plan, Layout, and Deed of Assignment."] },
+      {
+        "id": 4,
+        "ans": [
+          "The land is free from every known Government acquisition or interest and adverse claims."
+        ]
+      },
+      {
+        "id": 5,
+        "ans": [
+          "Outright payment of the sum of 1 Million Naira only per plot. (Commercial)",
+          "Outright payment of sum of 650,000 Naira only PER PLOT . (Residential)"
+        ]
+      },
+      { "id": 6, "ans": ["500sqm/ Plot."] },
+      { "id": 7, "ans": ["Yes."] },
+      {
+        "id": 8,
+        "ans": [
+          "Starter pack comprising a letter of acknowledgement of subscription and receipt."
+        ]
+      },
+      {
+        "id": 9,
+        "ans": [
+          "Survey Plan",
+          "Notifications of Allocation Letter",
+          "Land Agreement",
+          "Contract of Sales."
+        ]
+      },
+      {
+        "id": 10,
+        "ans": [
+          "Yes, You can start building on the land after physical allocation and payment of development levy."
+        ]
+      },
+      { "id": 11, "ans": ["No."] },
+      {
+        "id": 12,
+        "ans": [
+          "Yes, the Estate is in Sections: Residential and Commercial. Note: 'Face-Me-I-Face–You', And High-rise House Will Not Be Permitted in The Estate."
+        ]
+      },
+      {
+        "id": 13,
+        "ans": [
+          "AGL. can buy back plot(s) from subscribers who have paid up on their land or assist the subscribers to get a buyer.",
+          "A charge Of 20% (Covering agency fee @ 10% and transfer documentation fee @ 10%) shall be deducted by the company from the current price of the land."
+        ]
+      },
+      {
+        "id": 14,
+        "ans": [
+          "We strongly advise that cash payments should be paid to APLOM Go. Limited bank account Only. Otherwise, cheques should be issued in favor of APLOM GO Limited. We would not accept responsibility for any liability that may arise as a result of deviation from the above instruction."
+        ]
+      },
+      {
+        "id": 15,
+        "ans": [
+          "Since Most of Our Service Plot(S) Are Marketed by Independent Agent, We Have A Strict No-Refund Policy."
+        ]
+      },
+      {
+        "id": 16,
+        "ans": [
+          "We have a strict No-Refund policy and firmly advice that all installment payment should be remitted to our company account right on schedule to avoid a breach of contract and loss of allocation.",
+          "NOTE: Conner piece, commercial area attract 10% extra charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "shortName": "champions-court",
+    "name": "CHAMPIONS COURT ESTATE",
+    "location": "IBEJU TOWN, IBEJU LEKKI L.G.A",
+    "devFee": 350000,
+    "surveyFee": 350000,
+    "agreementFee": 100000,
+    "image": "champion.jpg",
+    "layout": "champions-layout.jpg",
+    "description": "Champions Court Estate is located at the center of ibeju Town, Ibeju Lekki",
+    "price": 2000000,
+    "infras": [
+      "Perimeter Fencing",
+      "Earth Road",
+      "Electricity",
+      "Drainage",
+      "Water",
+      "CCTV",
+      "Children Playing Ground",
+      "Basket Ball court"
+    ],
+    "spots": [
+      "Eateries",
+      "Cinema",
+      "Salons",
+      "Supermarkets",
+      "Health Facilities",
+      "Arcade and Sport Centre",
+      "Gym and Fitness Centre"
+    ],
+    "answers": [
+      {
+        "id": 1,
+        "ans": [
+          "CHAMPIONS COURT ESTATE is located at IBEJU TOWN EPE Express way, its about 20 Minutes from Ajah Bus Stop."
+        ]
+      },
+      {
+        "id": 2,
+        "ans": ["AGL. Property Development Powered by APLOM Go Limited."]
+      },
+      { "id": 3, "ans": ["Government Excition."] },
+      {
+        "id": 4,
+        "ans": [
+          "The land is free from every known Government acquisition or interest and adverse claims."
+        ]
+      },
+      {
+        "id": 5,
+        "ans": [
+          "Outright payment of Sum of 2 Million Naira only per plot. (Buy 2 plot outright and get 1 plot for free)"
+        ]
+      },
+      { "id": 6, "ans": ["600sqm."] },
+      { "id": 7, "ans": ["Yes."] },
+      {
+        "id": 8,
+        "ans": [
+          "Starter pack comprising a letter of acknowledgement of subscription and receipt."
+        ]
+      },
+      {
+        "id": 9,
+        "ans": [
+          "Survey Plan",
+          "Notifications of Allocation Letter",
+          "Land Agreement",
+          "Contract of Sales."
+        ]
+      },
+      {
+        "id": 10,
+        "ans": [
+          "Yes, You can start building on the land after physical allocation and payment of development levy."
+        ]
+      },
+      { "id": 11, "ans": ["No."] },
+      {
+        "id": 12,
+        "ans": [
+          "Yes, the Estate is in Sections: Residential and Commercial. Note: 'Face-Me-I-Face–You', And High-rise House Will Not Be Permitted in The Estate."
+        ]
+      },
+      {
+        "id": 13,
+        "ans": [
+          "AGL. can buy back plot(s) from subscribers who have paid up on their land or assist the subscribers to get a buyer.",
+          "A charge Of 20% (Covering agency fee @ 10% and transfer documentation fee @ 10%) shall be deducted by the company from the current price of the land."
+        ]
+      },
+      {
+        "id": 14,
+        "ans": [
+          "We strongly advise that cash payments should be paid to APLOM Go. Limited bank account Only. Otherwise, cheques should be issued in favor of APLOM GO Limited. We would not accept responsibility for any liability that may arise as a result of deviation from the above instruction."
+        ]
+      },
+      {
+        "id": 15,
+        "ans": [
+          "Since Most of Our Service Plot(S) Are Marketed by Independent Agent, We Have A Strict No-Refund Policy."
+        ]
+      },
+      {
+        "id": 16,
+        "ans": [
+          "We have a strict No-Refund policy and firmly advice that all installment payment should be remitted to our company account right on schedule to avoid a breach of contract and loss of allocation.",
+          "NOTE: Conner piece, commercial area attract 10% extra charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "shortName": "icons-park",
+    "name": "ICONS PARK ESTATE",
+    "location": "SANGOTEDO, ETI-OSA L.G.A",
+    "devFee": 350000,
+    "surveyFee": 350000,
+    "agreementFee": 200000,
+    "image": "icons-park.jpg",
+    "description": "Icons Park Estate is located in Sangotedo behind Shoprite, and it is about 15mins drive to Lekki.",
+    "price": 8500000,
+    "infras": [
+      "Perimeter Fencing",
+      "Earth Road",
+      "Electricity",
+      "Drainage",
+      "Water",
+      "CCTV",
+      "Children Playing Ground",
+      "Basket Ball court"
+    ],
+    "spots": [
+      "Eateries",
+      "Cinema",
+      "Salons",
+      "Supermarkets",
+      "Health Facilities",
+      "Arcade and Sport Centre",
+      "Gym and Fitness Centre"
+    ],
+    "legals": [
+      "Deed of Contract",
+      "Deed of Assignment (Registered)",
+      "Certificate of occupancy",
+      "Land Survey"
+    ],
+    "answers": [
+      {
+        "id": 1,
+        "ans": [
+          "Icons Park Estate is located at SMART CITY, BEHIND SHOPRITE SANGOTEDO off Lekki Express way. Its about 10 Minutes from Ajah Bus Stop.."
+        ]
+      },
+      {
+        "id": 2,
+        "ans": ["AGL. Property Development Powered by APLOM Go Limited."]
+      },
+      { "id": 3, "ans": ["C of O"] },
+      {
+        "id": 4,
+        "ans": null
+      },
+      {
+        "id": 5,
+        "ans": [
+          "Outright Payment of the sum of 8.5 Million naira only PER PLOT ( buy outright this season and get 1.5kva inverter + solar)"
+        ]
+      },
+      { "id": 6, "ans": ["600sqm."] },
+      { "id": 7, "ans": ["Yes."] },
+      {
+        "id": 8,
+        "ans": [
+          "Starter pack comprising a letter of acknowledgement of subscription and receipt."
+        ]
+      },
+      {
+        "id": 9,
+        "ans": [
+          "Survey Plan",
+          "Notifications of Allocation Letter",
+          "Land Agreement",
+          "Contract of Sales."
+        ]
+      },
+      {
+        "id": 10,
+        "ans": [
+          "Yes, You can start building on the land after physical allocation and payment of development levy."
+        ]
+      },
+      { "id": 11, "ans": ["No."] },
+      {
+        "id": 12,
+        "ans": [
+          "Yes, the Estate is in Sections: Residential and Commercial. Note: 'Face-Me-I-Face–You', And High-rise House Will Not Be Permitted in The Estate."
+        ]
+      },
+      {
+        "id": 13,
+        "ans": [
+          "AGL. can buy back plot(s) from subscribers who have paid up on their land or assist the subscribers to get a buyer.",
+          "A charge Of 20% (Covering agency fee @ 10% and transfer documentation fee @ 10%) shall be deducted by the company from the current price of the land."
+        ]
+      },
+      {
+        "id": 14,
+        "ans": [
+          "We strongly advise that cash payments should be paid to APLOM Go. Limited bank account Only. Otherwise, cheques should be issued in favor of APLOM GO Limited. We would not accept responsibility for any liability that may arise as a result of deviation from the above instruction."
+        ]
+      },
+      {
+        "id": 15,
+        "ans": [
+          "Since Most of Our Service Plot(S) Are Marketed by Independent Agent, We Have A Strict No-Refund Policy."
+        ]
+      },
+      {
+        "id": 16,
+        "ans": [
+          "We have a strict No-Refund policy and firmly advice that all installment payment should be remitted to our company account right on schedule to avoid a breach of contract and loss of allocation.",
+          "NOTE: Conner piece, commercial area attract 10% extra charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "shortName": "amazing-grace",
+    "name": "AMAZING GRACE ESTATE",
+    "location": "ELERANGBE IBEJU LEKKI LGA",
+    "devFee": 350000,
+    "surveyFee": 350000,
+    "agreementFee": 100000,
+    "image": "amazing-grace.jpg",
+    "description": "Amazing Grace Estate is located at Elerangbe. Elerangbe is a community in Ibeju Lekki, with about 10mins drive to Ajah",
+    "price": 750000,
+    "infras": [
+      "Perimeter Fencing",
+      "Earth Road",
+      "Electricity",
+      "Drainage",
+      "Water",
+      "CCTV",
+      "Children Playing Ground",
+      "Basket Ball court"
+    ],
+    "legals": [
+      "Deed of Contract",
+      "Deed of Assignment (Registered)",
+      "Certificate of occupancy",
+      "Land Survey"
+    ],
+    "answers": [
+      {
+        "id": 1,
+        "ans": [
+          "AMAZING GRACE ESTATE is located at Elerangbe Ibeju Lekki Area  of Lagos State"
+        ]
+      },
+      {
+        "id": 2,
+        "ans": ["AGL. Property Development Powered by APLOM Go Limited."]
+      },
+      { "id": 3, "ans": ["Gazette"] },
+      {
+        "id": 4,
+        "ans": [
+          "The land is free from every known Government acquisition or interest and adverse claims."
+        ]
+      },
+      {
+        "id": 5,
+        "ans": ["Outright Payment of the sum of 750,000 Naira only PER PLOT. "]
+      },
+      { "id": 6, "ans": ["600sqm."] },
+      { "id": 7, "ans": ["Yes."] },
+      {
+        "id": 8,
+        "ans": [
+          "Starter pack comprising a letter of acknowledgement of subscription and receipt."
+        ]
+      },
+      {
+        "id": 9,
+        "ans": [
+          "Survey Plan",
+          "Notifications of Allocation Letter",
+          "Land Agreement",
+          "Contract of Sales."
+        ]
+      },
+      {
+        "id": 10,
+        "ans": [
+          "Yes, You can start building on the land after physical allocation and payment of development levy."
+        ]
+      },
+      { "id": 11, "ans": ["No."] },
+      {
+        "id": 12,
+        "ans": [
+          "Yes, the Estate is in Sections: Residential and Commercial. Note: 'Face-Me-I-Face–You', And High-rise House Will Not Be Permitted in The Estate."
+        ]
+      },
+      {
+        "id": 13,
+        "ans": [
+          "AGL. can buy back plot(s) from subscribers who have paid up on their land or assist the subscribers to get a buyer.",
+          "A charge Of 20% (Covering agency fee @ 10% and transfer documentation fee @ 10%) shall be deducted by the company from the current price of the land."
+        ]
+      },
+      {
+        "id": 14,
+        "ans": [
+          "We strongly advise that cash payments should be paid to APLOM Go. Limited bank account Only. Otherwise, cheques should be issued in favor of APLOM GO Limited. We would not accept responsibility for any liability that may arise as a result of deviation from the above instruction."
+        ]
+      },
+      {
+        "id": 15,
+        "ans": [
+          "Since Most of Our Service Plot(S) Are Marketed by Independent Agent, We Have A Strict No-Refund Policy."
+        ]
+      },
+      {
+        "id": 16,
+        "ans": [
+          "We have a strict No-Refund policy and firmly advice that all installment payment should be remitted to our company account right on schedule to avoid a breach of contract and loss of allocation.",
+          "NOTE:0+030 Conner piece, commercial area attract 10% extra charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "shortName": "agl-vision",
+    "name": "AGL VISION ESTATE",
+    "location": "SANGOTEDO AREA OF ETI-OSA L.G.A",
+    "devFee": 350000,
+    "surveyFee": 350000,
+    "agreementFee": 200000,
+    "image": "agl-vision.jpg",
+    "description": "AGL Vision is located at Sangotedo, behind Shoprite. It is surrounded by developed Estate.",
+    "price": 7000000,
+    "infras": [
+      "Perimeter Fencing",
+      "Earth Road",
+      "Electricity",
+      "Drainage",
+      "Water",
+      "CCTV",
+      "Children Playing Ground",
+      "Basket Ball court"
+    ],
+    "legals": [
+      "Deed of Contract",
+      "Deed of Assignment (Registered)",
+      "Certificate of occupancy",
+      "Land Survey"
+    ],
+    "answers": [
+      {
+        "id": 1,
+        "ans": [
+          "AGL VISION is located at Sangotedo behind Shoprite, off monastery road Lekki Epe Expressway.  Its about 5 minutes from Ajah bus stop."
+        ]
+      },
+      {
+        "id": 2,
+        "ans": ["AGL. Property Development Powered by APLOM Go Limited."]
+      },
+      { "id": 3, "ans": ["C of O"] },
+      {
+        "id": 4,
+        "ans": null
+      },
+      {
+        "id": 5,
+        "ans": [
+          "Outright payment of the sum of 7 Million Naira Only.",
+          "Installment: 8 Million Naira and initial payment of 700,000 Naira and flexible payment plan up to 60 months.",
+          "Note: Non-payment of the monthly installment as at when due shall be treated as a fundamental breach of the contract which will result in termination Or revocation of the contract or attract 10% default charge. "
+        ]
+      },
+      { "id": 6, "ans": ["600sqm."] },
+      { "id": 7, "ans": ["Yes."] },
+      {
+        "id": 8,
+        "ans": [
+          "Starter pack comprising a letter of acknowledgement of subscription and receipt."
+        ]
+      },
+      {
+        "id": 9,
+        "ans": [
+          "Survey Plan",
+          "Notifications of Allocation Letter",
+          "Land Agreement",
+          "Contract of Sales."
+        ]
+      },
+      {
+        "id": 10,
+        "ans": [
+          "Yes, You can start building on the land after physical allocation and payment of development levy."
+        ]
+      },
+      { "id": 11, "ans": ["No."] },
+      {
+        "id": 12,
+        "ans": [
+          "Yes, the Estate is in Sections: Residential and Commercial. Note: 'Face-Me-I-Face–You', And High-rise House Will Not Be Permitted in The Estate."
+        ]
+      },
+      {
+        "id": 13,
+        "ans": [
+          "AGL. can buy back plot(s) from subscribers who have paid up on their land or assist the subscribers to get a buyer.",
+          "A charge Of 20% (Covering agency fee @ 10% and transfer documentation fee @ 10%) shall be deducted by the company from the current price of the land."
+        ]
+      },
+      {
+        "id": 14,
+        "ans": [
+          "We strongly advise that cash payments should be paid to APLOM Go. Limited bank account Only. Otherwise, cheques should be issued in favor of APLOM GO Limited. We would not accept responsibility for any liability that may arise as a result of deviation from the above instruction."
+        ]
+      },
+      {
+        "id": 15,
+        "ans": [
+          "Since Most of Our Service Plot(S) Are Marketed by Independent Agent, We Have A Strict No-Refund Policy."
+        ]
+      },
+      {
+        "id": 16,
+        "ans": [
+          "We have a strict No-Refund policy and firmly advice that all installment payment should be remitted to our company account right on schedule to avoid a breach of contract and loss of allocation.",
+          "NOTE: Conner piece, commercial area attract 10% extra charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "shortName": "green-meadow",
+    "name": "GREEN MEADOW ESTATE",
+    "location": "1ST ONIGANRINGAN TOWN, FREE TRADE ZONE IBEJU LEKKI LGA",
+    "devFee": 350000,
+    "surveyFee": 350000,
+    "agreementFee": 200000,
+    "image": "green-meadow.jpg",
+    "description": "Green Meadow is at the center of new Lagos, Free Trade Zone is a fast developing location, Dangote Refinery proposed site. It is located at Ibeju Lekki.",
+    "price": 4500000,
+    "infras": [
+      "Perimeter Fencing",
+      "Earth Road",
+      "Electricity",
+      "Drainage",
+      "Water",
+      "CCTV",
+      "Children Playing Ground",
+      "Basket Ball court"
+    ],
+    "legals": [
+      "Deed of Contract",
+      "Deed of Assignment (Registered)",
+      "Certificate of occupancy",
+      "Land Survey"
+    ],
+    "answers": [
+      {
+        "id": 1,
+        "ans": [
+          "Green meadows estate is located at 1st Onigaringan Town .,Free Trade Zone"
+        ]
+      },
+      {
+        "id": 2,
+        "ans": ["AGL. Property Development Powered by APLOM Go Limited."]
+      },
+      { "id": 3, "ans": ["C of O"] },
+      {
+        "id": 4,
+        "ans": null
+      },
+      {
+        "id": 5,
+        "ans": [
+          "Outright payment of the sum of 4.5 Million Naira. (PROMO, Buy 2 plot outright and get 1 plot for free)"
+        ]
+      },
+      { "id": 6, "ans": ["600sqm."] },
+      { "id": 7, "ans": ["Yes."] },
+      {
+        "id": 8,
+        "ans": [
+          "Starter pack comprising a letter of acknowledgement of subscription and receipt."
+        ]
+      },
+      {
+        "id": 9,
+        "ans": [
+          "Survey Plan",
+          "Notifications of Allocation Letter",
+          "Land Agreement",
+          "Contract of Sales."
+        ]
+      },
+      {
+        "id": 10,
+        "ans": [
+          "Yes, You can start building on the land after physical allocation and payment of development levy."
+        ]
+      },
+      { "id": 11, "ans": ["No."] },
+      {
+        "id": 12,
+        "ans": [
+          "Yes, the Estate is in Sections: Residential and Commercial. Note: 'Face-Me-I-Face–You', And High-rise House Will Not Be Permitted in The Estate."
+        ]
+      },
+      {
+        "id": 13,
+        "ans": [
+          "AGL. can buy back plot(s) from subscribers who have paid up on their land or assist the subscribers to get a buyer.",
+          "A charge Of 20% (Covering agency fee @ 10% and transfer documentation fee @ 10%) shall be deducted by the company from the current price of the land."
+        ]
+      },
+      {
+        "id": 14,
+        "ans": [
+          "We strongly advise that cash payments should be paid to APLOM Go. Limited bank account Only. Otherwise, cheques should be issued in favor of APLOM GO Limited. We would not accept responsibility for any liability that may arise as a result of deviation from the above instruction."
+        ]
+      },
+      {
+        "id": 15,
+        "ans": [
+          "Since Most of Our Service Plot(S) Are Marketed by Independent Agent, We Have A Strict No-Refund Policy."
+        ]
+      },
+      {
+        "id": 16,
+        "ans": [
+          "We have a strict No-Refund policy and firmly advice that all installment payment should be remitted to our company account right on schedule to avoid a breach of contract and loss of allocation.",
+          "NOTE: Conner piece, commercial area attract 10% extra charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "shortName": "abundance-grace",
+    "name": "ABUNDANCE GRACE ESTATE",
+    "location": "ODEOMI TOWN, ALONG NNPC/LNG ROAD",
+    "devFee": 350000,
+    "surveyFee": 350000,
+    "agreementFee": 100000,
+    "image": "abundance-grace.jpg",
+    "description": "Abundance Grace Estate, is found to be one of the fast developing community, located at Odeomi along NNPC pipeline road, Ibeju Lekki.",
+    "price": 450000,
+    "infras": [
+      "Perimeter Fencing",
+      "Earth Road",
+      "Electricity",
+      "Drainage",
+      "Water",
+      "CCTV",
+      "Children Playing Ground",
+      "Basket Ball court"
+    ],
+    "spots": [
+      "Eateries",
+      "Cinema",
+      "Salons",
+      "Supermarkets",
+      "Health Facilities",
+      "Arcade and Sport Centre",
+      "Gym and Fitness Centre"
+    ],
+    "answers": [
+      {
+        "id": 1,
+        "ans": [
+          "ABUNDANCE GRACE ESTATE is located at ODEOMI TOWN, aLONG NNPC/LNG ROAD."
+        ]
+      },
+      {
+        "id": 2,
+        "ans": ["AGL. Property Development Powered by APLOM Go Limited."]
+      },
+      { "id": 3, "ans": ["Excision"] },
+      {
+        "id": 4,
+        "ans": [
+          "The Land is free from every known Government acquisition or interest and adverse claims."
+        ]
+      },
+      {
+        "id": 5,
+        "ans": [
+          "Outright payment of the sum of 450,000 Naira only per plot. (Buy 5 plot outright and get 1 plot for free) "
+        ]
+      },
+      { "id": 6, "ans": ["600sqm."] },
+      { "id": 7, "ans": ["Yes."] },
+      {
+        "id": 8,
+        "ans": [
+          "Starter pack comprising a letter of acknowledgement of subscription and receipt."
+        ]
+      },
+      {
+        "id": 9,
+        "ans": [
+          "Survey Plan",
+          "Notifications of Allocation Letter",
+          "Land Agreement",
+          "Contract of Sales."
+        ]
+      },
+      {
+        "id": 10,
+        "ans": [
+          "Yes, You can start building on the land after physical allocation and payment of development levy."
+        ]
+      },
+      { "id": 11, "ans": ["No."] },
+      {
+        "id": 12,
+        "ans": [
+          "Yes, the Estate is in Sections: Residential and Commercial. Note: 'Face-Me-I-Face–You', And High-rise House Will Not Be Permitted in The Estate."
+        ]
+      },
+      {
+        "id": 13,
+        "ans": [
+          "AGL. can buy back plot(s) from subscribers who have paid up on their land or assist the subscribers to get a buyer.",
+          "A charge Of 20% (Covering agency fee @ 10% and transfer documentation fee @ 10%) shall be deducted by the company from the current price of the land."
+        ]
+      },
+      {
+        "id": 14,
+        "ans": [
+          "We strongly advise that cash payments should be paid to APLOM Go. Limited bank account Only. Otherwise, cheques should be issued in favor of APLOM GO Limited. We would not accept responsibility for any liability that may arise as a result of deviation from the above instruction."
+        ]
+      },
+      {
+        "id": 15,
+        "ans": [
+          "Since Most of Our Service Plot(S) Are Marketed by Independent Agent, We Have A Strict No-Refund Policy."
+        ]
+      },
+      {
+        "id": 16,
+        "ans": [
+          "We have a strict No-Refund policy and firmly advice that all installment payment should be remitted to our company account right on schedule to avoid a breach of contract and loss of allocation.",
+          "NOTE: Conner piece, commercial area attract 10% extra charges"
+        ]
+      }
+    ]
+  }
+]
