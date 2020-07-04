@@ -23,6 +23,7 @@
     "gatsby-plugin-react-helmet": "^3.3.5",
     "gatsby-plugin-sharp": "^2.6.13",
     "gatsby-plugin-styled-components": "^3.3.6",
+    "gatsby-plugin-tawk": "^1.0.0",
     "gatsby-source-filesystem": "^2.3.13",
     "gatsby-transformer-json": "^2.4.9",
     "gatsby-transformer-sharp": "^2.5.6",

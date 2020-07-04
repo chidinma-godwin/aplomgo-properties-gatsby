@@ -49,9 +49,12 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-layout`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-tawk`,
+      options: {
+        tawkId: "5f00f7e3760b2b560e6fc048",
+      },
+    },
   ],
   proxy: [
     {
