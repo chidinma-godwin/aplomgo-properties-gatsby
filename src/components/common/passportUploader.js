@@ -41,7 +41,6 @@ function PassportUploader({ file, onDropAccepted, name, value }) {
     onDropAccepted,
   })
 
-  console.log(fileRejections)
   const errors = []
 
   fileRejections.length &&
@@ -54,8 +53,6 @@ function PassportUploader({ file, onDropAccepted, name, value }) {
       }
       errors.push(error.message)
     })
-
-  console.log(errors)
 
   const thumbNail = file.preview && !errors.length && (
     <PreviewImage src={file.preview} thumbnail />
