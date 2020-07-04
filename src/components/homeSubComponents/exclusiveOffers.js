@@ -14,6 +14,9 @@ const SectionHeader = styled.h2`
   margin-bottom: 1em;
   color: #b67f2e;
 `
+const Champion = styled.div`
+  border: 2px solid black;
+`
 
 function ExclusiveOffers() {
   const data = useStaticQuery(graphql`
@@ -61,9 +64,9 @@ function ExclusiveOffers() {
       <SectionHeader>Exclusive Offers</SectionHeader>
       <Row>
         <Wrapper md={12} lg={9}>
-          <div className="mb-3">
+          <Champion className="mb-3">
             <Img fluid={data.champion.childImageSharp.fluid} />
-          </div>
+          </Champion>
           <div className="mb-3">
             <Img fluid={data.exclusive.childImageSharp.fluid} />
             {/* <div.Body>
