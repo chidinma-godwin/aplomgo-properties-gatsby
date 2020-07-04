@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { Card } from "react-bootstrap"
+import React, { useState, useEffect } from "react"
+import { Card, Modal, Button } from "react-bootstrap"
 import styled from "styled-components"
 import axios from "axios"
 import FileSaver from "file-saver"
@@ -48,6 +48,15 @@ function SubscriptionPage({
 }) {
   const [showFill, setShowFill] = useState(true)
   const [showDownload, setShowDownload] = useState(true)
+  const [modalShow, setModalShow] = React.useState(false)
+
+  useEffect(() => {
+    if (successMsg) {
+      setModalShow(true)
+      setShowDownload(true)
+      setShowFill(true)
+    }
+  }, [successMsg])
 
   const subscriptionProperty = pageContext && pageContext.subscriptionProperty
   const property = subscriptionProperty || currentProperty
@@ -81,6 +90,8 @@ function SubscriptionPage({
       })
   }
 
+  const handleCloseModal = () => setModalShow(false)
+
   return (
     <Wrapper className={propertyParams ? "container" : ""} propertyParams>
       <h3 className="mb-4">{`${property.name} SUBSCRIPTION`}</h3>
@@ -110,27 +121,50 @@ function SubscriptionPage({
         border={successMsg}
       >
         {successMsg ? (
-          <>
-            <div>{successMsg}</div>
-            <PDFDownloadLink
-              document={
-                <SubscriptionPdf formValues={formValues} property={property} />
-              }
-              fileName={`${property.name}.pdf`}
-            >
-              {({ blob, url, loading, error }) =>
-                loading ? (
-                  "Loading document..."
-                ) : (
-                  <div className="text-success mb-5">
-                    Download a copy of your response!
-                  </div>
-                )
-              }
-            </PDFDownloadLink>
-          </>
+          <Modal
+            size="lg"
+            aria-labelledby="submission-success-modal"
+            centered
+            backdrop="static"
+            keyboard={false}
+            show={modalShow}
+            onHide={handleCloseModal}
+          >
+            <Modal.Header closeButton>
+              <Modal.Title>Submission Success</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              {successMsg} You can download a copy of your response by clicking
+              the download button below
+            </Modal.Body>
+            <Modal.Footer>
+              <div>
+                <PDFDownloadLink
+                  document={
+                    <SubscriptionPdf
+                      formValues={formValues}
+                      property={property}
+                    />
+                  }
+                  fileName={`${property.name}.pdf`}
+                >
+                  {({ blob, url, loading, error }) =>
+                    loading ? (
+                      "Loading document..."
+                    ) : (
+                      <Button variant="primary" onClick={handleCloseModal}>
+                        Download
+                      </Button>
+                    )
+                  }
+                </PDFDownloadLink>
+              </div>
+              <Button variant="secondary" onClick={handleCloseModal}>
+                Cancel
+              </Button>
+            </Modal.Footer>
+          </Modal>
         ) : (
-          // <div className='text-success mb-5'>`${successMsg} `</div>
           <Card.Body>
             <h5>Subscription Form</h5>
             <p>

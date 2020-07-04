@@ -81,7 +81,6 @@ const LayoutImage = styled(Image)`
 
 function Property({ pageContext: { property }, location }) {
   //   const { property } = props.match.params
-
   const successMsg = location && location.state && location.state.success
   const formValues = location && location.state && location.state.formValues
 

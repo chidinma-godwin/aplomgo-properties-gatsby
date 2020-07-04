@@ -17,6 +17,7 @@ function NewsLetter() {
       value: "",
       placeholder: "Email",
       size: "sm",
+      block: true,
     },
   ]
 

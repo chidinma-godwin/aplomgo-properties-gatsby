@@ -10,8 +10,9 @@ import { Alert } from "react-bootstrap"
 function SubscriptionForm({ property }) {
   const [formValues, setFormValues] = useState({})
   const [post, setPost] = useState(false)
-  const [success, setSuccess] = useState("")
-  const [error, setError] = useState("")
+  const [success, setSuccess] = useState(null)
+  const [error, setError] = useState(null)
+  const [count, setCount] = useState(0)
 
   const fields = [
     {
@@ -227,8 +228,9 @@ function SubscriptionForm({ property }) {
         buttonText="Continue"
         error={error}
         success={success}
+        subscription={true}
       />
-      {post && (
+      {post && count === 0 && (
         <div>
           <BlobProvider
             document={
@@ -236,26 +238,34 @@ function SubscriptionForm({ property }) {
             }
           >
             {({ blob, url, loading, error }) => {
-              const data = new FormData()
-              data.append("file", blob)
-              data.append("token", formValues.token)
-              axios({
-                method: "post",
-                url: "/api/uploadPdf",
-                data,
-              })
-                .then(res => {
-                  setSuccess(res.data.message)
-                  setError("")
-                  navigate(`/properties/${property.shortName}`, {
-                    state: { success, error, formValues },
+              if (!loading && !error) {
+                const data = new FormData()
+                data.append("file", blob)
+                data.append("token", formValues.token)
+                axios({
+                  method: "post",
+                  url: "/api/uploadPdf",
+                  data,
+                })
+                  .then(async res => {
+                    await setPost(false)
+                    await setCount(1)
+                    await setSuccess(res.data.message)
+                    navigate(`/properties/${property.shortName}`, {
+                      state: {
+                        success: res.data.message,
+                        error: null,
+                        formValues,
+                      },
+                    })
                   })
-                })
-                .catch(err => {
-                  setError(err.response.data.error)
-                })
+                  .catch(err => {
+                    setError(err.response.data.error)
+                  })
+              }
               if (error) {
                 console.log(error.response)
+                setError("Unexpected error. Please try again")
               }
               return null
             }}

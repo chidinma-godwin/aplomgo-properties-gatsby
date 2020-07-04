@@ -25,12 +25,11 @@ function CustomForm({
   handleSubmit,
   buttonText,
   newsletter,
-  error,
-  success,
+  subscription,
 }) {
   const [file, setFile] = useState({})
 
-  const onDrop = (acceptedFiles, setFieldValue, name) => {
+  const onDropAccepted = (acceptedFiles, setFieldValue, name) => {
     const acceptedFile = acceptedFiles[0]
     setFieldValue(name, acceptedFile)
     setFile(() => {
@@ -79,7 +78,7 @@ function CustomForm({
       onSubmit={(values, { resetForm, setSubmitting }) => {
         handleSubmit(values)
         subRecaptcha.current.reset && subRecaptcha.current.reset()
-        resetForm({ values: "" })
+        !subscription && resetForm({ values: "" })
         setSubmitting(false)
       }}
     >
@@ -109,8 +108,8 @@ function CustomForm({
                 {input.passport ? (
                   <PassportUploader
                     file={file}
-                    onDrop={acceptedFiles =>
-                      onDrop(acceptedFiles, setFieldValue, input.name)
+                    onDropAccepted={acceptedFiles =>
+                      onDropAccepted(acceptedFiles, setFieldValue, input.name)
                     }
                     name={input.name}
                     value={values[input.name]}
@@ -118,8 +117,8 @@ function CustomForm({
                 ) : input.phoneInput ? (
                   <PhoneInput
                     inputProps={{
-                      className: "form-control",
-                      id: "phone",
+                      className: "form-control phone",
+                      id: [input.name],
                       required: true,
                       autoFocus: false,
                     }}
@@ -154,7 +153,9 @@ function CustomForm({
                     onChange={handleChange}
                     onBlur={handleBlur}
                   >
-                    <option>--Select--</option>
+                    <option value="" disabled hidden>
+                      --Select--
+                    </option>
                     {input.options.map(option => (
                       <option key={option}>{option}</option>
                     ))}
