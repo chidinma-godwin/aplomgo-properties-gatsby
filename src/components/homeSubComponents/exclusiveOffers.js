@@ -63,7 +63,7 @@ function ExclusiveOffers() {
     <>
       <SectionHeader>Exclusive Offers</SectionHeader>
       <Row>
-        <Wrapper md={12} lg={9}>
+        <Wrapper md={12} lg={8}>
           <Champion className="mb-3">
             <Img fluid={data.champion.childImageSharp.fluid} />
           </Champion>
@@ -78,13 +78,9 @@ function ExclusiveOffers() {
           </div>
         </Wrapper>
 
-        <Wrapper md={12} lg={3}>
+        <Wrapper md={12} lg={4}>
           <Img fluid={data.remo.childImageSharp.fluid} className="mb-3" />
           <Img fluid={data.flyer.childImageSharp.fluid} className="mb-3" />
-          <Img
-            fluid={data.properties.childImageSharp.fluid}
-            className="d-none d-lg-block d-xl-block"
-          />
         </Wrapper>
       </Row>
     </>
