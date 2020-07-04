@@ -63,26 +63,7 @@ const BottomNav = styled.div`
   background-color: #b67f2e;
   color: #fff;
   font-size: 14px;
-`
-
-const ChatWrapper = styled.div`
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-`
-
-const Chat = styled.div`
-  border-radius: 50%;
-  background-color: #28a745;
-  width: fit-content;
-  padding: 0.8em;
-  margin-left: auto;
-`
-const ChatBox = styled.div`
-  display: ${props => (props.show ? "block" : "none")};
-  padding: 2em;
-  background: #28a745;
-  color: #fff;
+  width: 100%;
 `
 
 function Footer() {
@@ -221,24 +202,7 @@ function Footer() {
           </Row>
         </Container>
       </CustomFooter>
-      <div style={{ position: "relative" }}>
-        <BottomNav style={{ position: "absolute", width: "100%" }}>
-          © 2020 Aplom Go Limited. All Rights Reserved.
-        </BottomNav>
-        <ChatWrapper>
-          <ChatBox show={showChat ? 1 : undefined}>
-            This Feature will be added soon!
-          </ChatBox>
-          <Chat>
-            <FontAwesomeIcon
-              icon={["fas", "comment"]}
-              color="#fff"
-              size="2x"
-              onClick={handleChatClick}
-            />
-          </Chat>
-        </ChatWrapper>
-      </div>
+      <BottomNav>© 2020 Aplom Go Limited. All Rights Reserved.</BottomNav>
     </>
   )
 }
