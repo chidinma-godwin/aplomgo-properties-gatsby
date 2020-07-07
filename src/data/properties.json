@@ -164,9 +164,7 @@
       },
       {
         "id": 5,
-        "ans": [
-          "Outright payment of Sum of 2 Million Naira only per plot. (Buy 2 plot outright and get 1 plot for free)"
-        ]
+        "ans": ["Outright payment of Sum of 2.5 Million Naira only per plot."]
       },
       { "id": 6, "ans": ["600sqm."] },
       { "id": 7, "ans": ["Yes."] },
@@ -281,7 +279,7 @@
       {
         "id": 5,
         "ans": [
-          "Outright Payment of the sum of 8.5 Million naira only PER PLOT ( buy outright this season and get 1.5kva inverter + solar)"
+          "Outright Payment of the sum of 8.5 Million naira only PER PLOT"
         ]
       },
       { "id": 6, "ans": ["600sqm."] },
@@ -389,7 +387,7 @@
       },
       {
         "id": 5,
-        "ans": ["Outright Payment of the sum of 750,000 Naira only PER PLOT. "]
+        "ans": ["Outright Payment of the sum of 750,000 Naira only PER PLOT."]
       },
       { "id": 6, "ans": ["600sqm."] },
       { "id": 7, "ans": ["Yes."] },
@@ -496,7 +494,7 @@
         "id": 5,
         "ans": [
           "Outright payment of the sum of 7 Million Naira Only.",
-          "Installment: 8 Million Naira and initial payment of 700,000 Naira and flexible payment plan up to 60 months.",
+          "Installment: 8 Million Naira and initial payment of 700,000 Naira. Flexible payment plan up to 60 months.",
           "Note: Non-payment of the monthly installment as at when due shall be treated as a fundamental breach of the contract which will result in termination Or revocation of the contract or attract 10% default charge. "
         ]
       },
@@ -603,9 +601,7 @@
       },
       {
         "id": 5,
-        "ans": [
-          "Outright payment of the sum of 4.5 Million Naira. (PROMO, Buy 2 plot outright and get 1 plot for free)"
-        ]
+        "ans": ["Outright payment of the sum of 4.5 Million Naira."]
       },
       { "id": 6, "ans": ["600sqm."] },
       { "id": 7, "ans": ["Yes."] },
@@ -715,9 +711,7 @@
       },
       {
         "id": 5,
-        "ans": [
-          "Outright payment of the sum of 450,000 Naira only per plot. (Buy 5 plot outright and get 1 plot for free) "
-        ]
+        "ans": ["Outright payment of the sum of 450,000 Naira only per plot."]
       },
       { "id": 6, "ans": ["600sqm."] },
       { "id": 7, "ans": ["Yes."] },
