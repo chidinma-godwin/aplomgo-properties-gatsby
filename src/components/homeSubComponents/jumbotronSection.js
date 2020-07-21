@@ -21,10 +21,11 @@ const CarouselCaption = styled(Carousel.Caption)`
   margin-top: auto;
   margin-bottom: auto;
   background: rgba(255, 255, 255, 0.8);
-  border-radius: 5%;
+  border-radius: 0;
   bottom: 50%;
   color: #ab1010;
   font-weight: 800 !important;
+  z-index: 0;
 `
 
 function JumbotronSection() {
@@ -62,7 +63,7 @@ function JumbotronSection() {
   `)
 
   return (
-    <CarouselContainer>
+    <CarouselContainer indicators={false}>
       <Carousel.Item>
         <SlideImage
           className="d-block w-100"

@@ -46,3 +46,43 @@ input.phone.form-control {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #b67f2e !important;
 }
+
+.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+/* .ReactModal__Content {
+  position: relative;
+  top: 40px;
+  left: 0px;
+  right: 0px;
+  bottom: 40px;
+  border: 0px;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 1.5em;
+  display: block;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  min-height: 60vh;
+} */
+
+/* .ReactModal__Overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.58);
+  z-index: 5;
+} */
+
+/* @media (max-width: 500px) {
+  .ReactModal__Content {
+    max-width: 90%;
+  }
+} */

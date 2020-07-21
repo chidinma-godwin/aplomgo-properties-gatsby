@@ -1,11 +1,17 @@
-const properties = require("./src/data/properties.json")
-
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === "PropertiesJson") {
     createNodeField({
       node,
       name: `propertyImage`,
+      value: `../images/${node.image}`,
+    })
+  }
+
+  if (node.internal.type === "PromoJson") {
+    createNodeField({
+      node,
+      name: `promoImage`,
       value: `../images/${node.image}`,
     })
   }

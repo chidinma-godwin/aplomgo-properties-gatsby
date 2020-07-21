@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "gatsby"
@@ -67,10 +67,6 @@ const BottomNav = styled.div`
 `
 
 function Footer() {
-  const [showChat, setShowChat] = useState(false)
-  const handleChatClick = () => {
-    setShowChat(prevShow => !prevShow)
-  }
   return (
     <>
       <CustomFooter>
@@ -144,6 +140,9 @@ function Footer() {
                 </QuickLink>
                 <QuickLink as={Link} className="mb-3" to="/subscription">
                   Subscription
+                </QuickLink>
+                <QuickLink as={Link} className="mb-3" to="/information/promos">
+                  Promos
                 </QuickLink>
               </LinkList>
             </Col>

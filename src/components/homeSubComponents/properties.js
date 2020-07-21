@@ -72,6 +72,7 @@ function Properties() {
     }
   `)
   const propertiesList = data.allPropertiesJson.nodes
+
   return (
     <>
       <SectionHeader>Latest properties</SectionHeader>

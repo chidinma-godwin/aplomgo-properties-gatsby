@@ -49,13 +49,7 @@ function VideoSection() {
     }
   `)
 
-  const videoIdArr = [
-    "IQS6Ph2sha0",
-    "_p7roePRsOQ",
-    "zuwBdTC2mgo",
-    "4X0BPZDWwVY",
-  ]
-  const [videoId, setVideoId] = useState(videoIdArr)
+  const videoId = ["IQS6Ph2sha0", "_p7roePRsOQ", "zuwBdTC2mgo", "4X0BPZDWwVY"]
   const [currentVideoId, setCurrentVideoId] = useState("")
   const [index, setIndex] = useState(0)
   const [showLoading, setShowLoading] = useState(true)
@@ -70,7 +64,7 @@ function VideoSection() {
     width: "90%",
     height: "100%",
     playerVars: {
-      origin: "aplomgo.com",
+      origin: "https://aplomgo.com",
       modestbranding: 1,
       rel: 0,
       autoplay,

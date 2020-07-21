@@ -59,11 +59,11 @@ module.exports = {
   proxy: [
     {
       prefix: "/api",
-      url: "http://localhost:4000",
+      url: "http://localhost:40000",
     },
     {
       prefix: "/info",
-      url: "http://localhost:4000",
+      url: "http://localhost:40000",
     },
   ],
 }

@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "name": "Icons Park Estate",
+    "shortName": "icons-park",
+    "image": "icons-park.jpg",
+    "description": "Icons Park Estate is located in Sangotedo behind Shoprite, and it is about 15mins drive to Lekki.",
+    "details": ["Get a plot of land for 6.5m naira instead of 8.5m naira"],
+    "endDate": "July 25, 2020",
+    "conditions": ["Only 10 plots are available at the promo price"],
+    "video": "UqNw_OVZnoo"
+  },
+  {
+    "id": 2,
+    "name": "Amazing Grace Estate",
+    "shortName": "amazing-grace",
+    "image": "amazing-grace-promo.jpg",
+    "description": "Amazing Grace Estate is located at Elerangbe. Elerangbe is a community in Ibeju Lekki, with about 10mins drive to Ajah",
+    "details": [
+      "Buy 5 plots outright and get 1 plot free at 750,000 naira per plot"
+    ],
+    "endDate": "To be communicated",
+    "conditions": null,
+    "video": null
+  },
+  {
+    "id": 3,
+    "name": "Champions Court Estate",
+    "shortName": "champions-court",
+    "image": "champion.jpg",
+    "description": "CHAMPIONS COURT ESTATE is located at IBEJU TOWN EPE Express way, its about 20 Minutes from Ajah Bus Stop.",
+    "details": [
+      "Buy 1 plot of land and get a bag of rice and cooking oil",
+      "Buy 2 plots outright and get one ram"
+    ],
+    "endDate": "August 31, 2020",
+    "conditions": null,
+    "video": null
+  }
+]

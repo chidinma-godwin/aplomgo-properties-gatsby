@@ -364,6 +364,14 @@ function Header({ width }) {
                 </SubLink>
 
                 <SubLink
+                  to="/information/promos"
+                  className="mb-3"
+                  onClick={() => setInfo(false)}
+                >
+                  Promos
+                </SubLink>
+
+                <SubLink
                   to="/information/terms"
                   className="mb-3"
                   onClick={() => setInfo(false)}
@@ -394,6 +402,13 @@ function Header({ width }) {
                 onClick={toggleNavbar}
               >
                 FAQ
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/information/promos"
+                onClick={toggleNavbar}
+              >
+                Promos
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}

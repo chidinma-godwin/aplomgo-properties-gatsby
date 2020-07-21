@@ -4,7 +4,7 @@ import axios from "axios"
 import { Alert } from "react-bootstrap"
 import CustomForm from "./customForm"
 
-function NewsLetter() {
+function NewsLetter({ block = true }) {
   const [success, setSuccess] = useState("")
   const [error, setError] = useState("")
   const [show, setShow] = useState(true)
@@ -17,7 +17,7 @@ function NewsLetter() {
       value: "",
       placeholder: "Email",
       size: "sm",
-      block: true,
+      block: block,
     },
   ]
 

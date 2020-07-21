@@ -4,18 +4,14 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Wrapper = styled(Col)`
-  padding: 0em 0.5em;
-`
-
 const SectionHeader = styled.h2`
   text-align: center;
   margin-top: 2em;
   margin-bottom: 1em;
   color: #b67f2e;
 `
-const Champion = styled.div`
-  border: 2px solid black;
+const BorderedImage = styled(Col)`
+  border: 2px solid #b67f2e;
 `
 
 function ExclusiveOffers() {
@@ -28,28 +24,14 @@ function ExclusiveOffers() {
           }
         }
       }
-      remo: file(relativePath: { eq: "remo.jpg" }) {
+      amazingGrace: file(relativePath: { eq: "amazing-grace-promo.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      exclusive: file(relativePath: { eq: "exclusive.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      flyer: file(relativePath: { eq: "flyer.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      properties: file(relativePath: { eq: "properties.jpg" }) {
+      iconsPark: file(relativePath: { eq: "icons-park.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -63,25 +45,15 @@ function ExclusiveOffers() {
     <>
       <SectionHeader>Exclusive Offers</SectionHeader>
       <Row>
-        <Wrapper md={12} lg={8}>
-          <Champion className="mb-3">
-            <Img fluid={data.champion.childImageSharp.fluid} />
-          </Champion>
-          <div className="mb-3">
-            <Img fluid={data.exclusive.childImageSharp.fluid} />
-            {/* <div.Body>
-          <div.Text>Lorem Ipsum</div.Text>
-        </div.Body>
-        <div.Footer>
-          <small className='text-muted'>Last updated 3 mins ago</small>
-        </div.Footer> */}
-          </div>
-        </Wrapper>
-
-        <Wrapper md={12} lg={4}>
-          <Img fluid={data.remo.childImageSharp.fluid} className="mb-3" />
-          <Img fluid={data.flyer.childImageSharp.fluid} className="mb-3" />
-        </Wrapper>
+        <BorderedImage sm={12} md={12} lg={4} className="mb-3 p-0">
+          <Img fluid={data.iconsPark.childImageSharp.fluid} />
+        </BorderedImage>
+        <BorderedImage sm={12} md={12} lg={4} className="mb-3 p-0">
+          <Img fluid={data.amazingGrace.childImageSharp.fluid} />
+        </BorderedImage>
+        <BorderedImage sm={12} md={12} lg={4} className="mb-3 p-0">
+          <Img fluid={data.champion.childImageSharp.fluid} />
+        </BorderedImage>
       </Row>
     </>
   )

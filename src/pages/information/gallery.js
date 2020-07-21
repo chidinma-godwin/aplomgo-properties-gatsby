@@ -93,7 +93,7 @@ function Gallery({ data }) {
     width: "100%",
     height: "350px",
     playerVars: {
-      origin: "http://aplomgo.com",
+      origin: "https://aplomgo.com",
       modestbranding: 1,
       rel: 0,
       controls: 1,
