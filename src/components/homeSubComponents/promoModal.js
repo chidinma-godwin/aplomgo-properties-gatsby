@@ -72,7 +72,7 @@ const ButtonsContainer = styled.div`
 function PromoModal() {
   const data = useStaticQuery(graphql`
     query {
-      iconsPark: file(relativePath: { eq: "icons-park.jpg" }) {
+      iconsPark: file(relativePath: { eq: "icons-park-promo.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 700) {
             ...GatsbyImageSharpFluid

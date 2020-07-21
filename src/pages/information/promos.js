@@ -80,6 +80,11 @@ const CustomLink = styled(Link)`
   }
 `
 
+const Subscribe = styled.p`
+  font-size: 16px;
+  font-weight: bold;
+`
+
 function Promos({ data }) {
   const promoList = data.allPromoJson.nodes
 
@@ -152,10 +157,10 @@ function Promos({ data }) {
         </PromoWrapper>
       ))}
 
-      <p>
+      <Subscribe>
         You want to be notified when there is an ongoing promo? Subscribe to our
         newsletter by providing your email below.
-      </p>
+      </Subscribe>
       <NewsLetter block={false} />
     </Wrapper>
   )

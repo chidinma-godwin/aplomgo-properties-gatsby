@@ -31,7 +31,7 @@ function ExclusiveOffers() {
           }
         }
       }
-      iconsPark: file(relativePath: { eq: "icons-park.jpg" }) {
+      iconsPark: file(relativePath: { eq: "icons-park-promo.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
