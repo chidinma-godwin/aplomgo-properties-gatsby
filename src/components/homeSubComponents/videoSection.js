@@ -4,6 +4,7 @@ import YouTube from "react-youtube"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import LazyLoad from "react-lazyload"
 
 const CenteredColumn = styled(Col)``
 
@@ -11,10 +12,8 @@ const UnLoadedVideo = styled.div`
   position: absolute;
   background-color: grey;
   color: #fff;
-  height: 100%;
   width: 90%;
-  display: ${props => (props.show ? "flex" : "none")};
-  z-index: -5;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -52,7 +51,6 @@ function VideoSection() {
   const videoId = ["IQS6Ph2sha0", "_p7roePRsOQ", "zuwBdTC2mgo", "4X0BPZDWwVY"]
   const [currentVideoId, setCurrentVideoId] = useState("")
   const [index, setIndex] = useState(0)
-  const [showLoading, setShowLoading] = useState(true)
   const [autoplay, setAutoplay] = useState(0)
 
   useEffect(() => {
@@ -73,7 +71,6 @@ function VideoSection() {
 
   const videoReady = event => {
     // access to player in all event handlers via event.target
-    setShowLoading(false)
     event.target.pauseVideo()
   }
 
@@ -92,18 +89,25 @@ function VideoSection() {
   return (
     <Row className="mt-5 mb-5">
       <VideoWrapper sm={12} md={6}>
-        <VideoPlayer
-          videoId={currentVideoId || "IQS6Ph2sha0"}
-          opts={opts}
-          onReady={videoReady}
-          onEnd={playNext}
-        />
-        <UnLoadedVideo show={showLoading}>
-          <p>Loading video</p>
-          <Spinner animation="border" role="status" size="md">
-            <span className="sr-only">Loading...</span>
-          </Spinner>
-        </UnLoadedVideo>
+        <LazyLoad
+          height={"100%"}
+          placeholder={
+            <UnLoadedVideo>
+              <p>Loading video</p>
+              <Spinner animation="border" role="status" size="md">
+                <span className="sr-only">Loading...</span>
+              </Spinner>
+            </UnLoadedVideo>
+          }
+          once={true}
+        >
+          <VideoPlayer
+            videoId={currentVideoId || "IQS6Ph2sha0"}
+            opts={opts}
+            onReady={videoReady}
+            onEnd={playNext}
+          />
+        </LazyLoad>
       </VideoWrapper>
       <CenteredColumn>
         <SectionHeading>Affordable Housing for All</SectionHeading>

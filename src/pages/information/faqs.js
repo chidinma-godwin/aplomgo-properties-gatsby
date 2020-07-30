@@ -2,8 +2,21 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Container, Card, Accordion } from "react-bootstrap"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import getQuestions from "../../data/questions"
+
+export const query = graphql`
+  query {
+    allPropertiesJson(filter: { shortName: { eq: "icons-park" } }) {
+      nodes {
+        answers {
+          ans
+          id
+        }
+      }
+    }
+  }
+`
 
 const Wrapper = styled(Container)`
   margin-top: 100px;
@@ -45,19 +58,7 @@ const CustomLink = styled.a`
   }
 `
 
-function FAQ() {
-  const data = useStaticQuery(graphql`
-    query {
-      allPropertiesJson(filter: { shortName: { eq: "aplom-gold" } }) {
-        nodes {
-          answers {
-            ans
-            id
-          }
-        }
-      }
-    }
-  `)
+function FAQ({ data }) {
   const questions = getQuestions()
   const sampleAnswers = data.allPropertiesJson.nodes[0].answers
 

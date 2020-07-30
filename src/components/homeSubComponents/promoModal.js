@@ -72,7 +72,7 @@ const ButtonsContainer = styled.div`
 function PromoModal() {
   const data = useStaticQuery(graphql`
     query {
-      iconsPark: file(relativePath: { eq: "icons-park-promo.jpg" }) {
+      champion: file(relativePath: { eq: "champion.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 700) {
             ...GatsbyImageSharpFluid
@@ -109,7 +109,7 @@ function PromoModal() {
     >
       <div>
         <PromoImage
-          fluid={data.iconsPark.childImageSharp.fluid}
+          fluid={data.champion.childImageSharp.fluid}
           className="mb-3"
         />
         <ButtonsContainer>

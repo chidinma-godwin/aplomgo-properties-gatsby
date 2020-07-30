@@ -4,7 +4,6 @@ import { Card, Table, Container, Button } from "react-bootstrap"
 import styled from "styled-components"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import YouTube from "react-youtube"
 
 export const query = graphql`
   query {
@@ -16,16 +15,20 @@ export const query = graphql`
         description
         details
         endDate
-        conditions
-        video
-        fields {
-          promoImage {
-            childImageSharp {
-              fluid(maxWidth: 1000) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+        image
+      }
+    }
+    champion: file(relativePath: { eq: "champion.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    amazingGrace: file(relativePath: { eq: "amazing-grace-promo.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -88,17 +91,6 @@ const Subscribe = styled.p`
 function Promos({ data }) {
   const promoList = data.allPromoJson.nodes
 
-  const opts = {
-    width: "100%",
-    height: "350px",
-    playerVars: {
-      origin: "https://aplomgo.com",
-      modestbranding: 1,
-      rel: 0,
-      controls: 1,
-    },
-  }
-
   return (
     <Wrapper>
       <SectionHeader>Current Offers</SectionHeader>
@@ -106,7 +98,7 @@ function Promos({ data }) {
         <PromoWrapper key={promo.id}>
           <SectionSubHeader>{promo.name}</SectionSubHeader>
           <Img
-            fluid={promo.fields.promoImage.childImageSharp.fluid}
+            fluid={data[promo.image].childImageSharp.fluid}
             className="mb-5"
           />
           <FeaturesCard className="mb-5">
@@ -130,18 +122,6 @@ function Promos({ data }) {
                   <td>End Date</td>
                   <td>{promo.endDate}</td>
                 </tr>
-                {promo.conditions && (
-                  <tr>
-                    <td>Condition(s)</td>
-                    <td>
-                      <List>
-                        {promo.conditions.map((condition, index) => (
-                          <li key={index}>{condition}</li>
-                        ))}
-                      </List>
-                    </td>
-                  </tr>
-                )}
               </tbody>
             </PropertyTable>
             <Card.Body>
@@ -152,8 +132,6 @@ function Promos({ data }) {
               </CustomButton>
             </Card.Body>
           </FeaturesCard>
-
-          {promo.video && <YouTube videoId={promo.video} opts={opts} />}
         </PromoWrapper>
       ))}
 

@@ -31,7 +31,7 @@ function ExclusiveOffers() {
           }
         }
       }
-      iconsPark: file(relativePath: { eq: "icons-park-promo.jpg" }) {
+      exclusive: file(relativePath: { eq: "exclusive.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -46,13 +46,13 @@ function ExclusiveOffers() {
       <SectionHeader>Exclusive Offers</SectionHeader>
       <Row>
         <BorderedImage sm={12} md={12} lg={4} className="mb-3 p-0">
-          <Img fluid={data.iconsPark.childImageSharp.fluid} />
-        </BorderedImage>
-        <BorderedImage sm={12} md={12} lg={4} className="mb-3 p-0">
           <Img fluid={data.amazingGrace.childImageSharp.fluid} />
         </BorderedImage>
         <BorderedImage sm={12} md={12} lg={4} className="mb-3 p-0">
           <Img fluid={data.champion.childImageSharp.fluid} />
+        </BorderedImage>
+        <BorderedImage sm={12} md={12} lg={4} className="mb-3 p-0">
+          <Img fluid={data.exclusive.childImageSharp.fluid} />
         </BorderedImage>
       </Row>
     </>

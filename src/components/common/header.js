@@ -381,7 +381,11 @@ function Header({ width }) {
               </CustomDropdown>
             </CustomLink>
           ) : (
-            <NavDropdown title="About" as={LinkText} id="basic-nav-dropdown">
+            <NavDropdown
+              title="Information"
+              as={LinkText}
+              id="basic-nav-dropdown"
+            >
               <NavDropdown.Item
                 as={Link}
                 to="/information/about"

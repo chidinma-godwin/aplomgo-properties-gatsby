@@ -7,14 +7,6 @@ exports.onCreateNode = ({ node, actions }) => {
       value: `../images/${node.image}`,
     })
   }
-
-  if (node.internal.type === "PromoJson") {
-    createNodeField({
-      node,
-      name: `promoImage`,
-      value: `../images/${node.image}`,
-    })
-  }
 }
 
 exports.createPages = async ({ actions, graphql }) => {

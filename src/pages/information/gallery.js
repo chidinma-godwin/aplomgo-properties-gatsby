@@ -4,6 +4,7 @@ import styled from "styled-components"
 import YouTube from "react-youtube"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
+import LazyLoad from "react-lazyload"
 
 export const fluidImage = graphql`
   fragment fluidImage on File {
@@ -99,6 +100,13 @@ function Gallery({ data }) {
       controls: 1,
     },
   }
+  const videoIdArr = [
+    "IQS6Ph2sha0",
+    "zuwBdTC2mgo",
+    "_p7roePRsOQ",
+    "4X0BPZDWwVY",
+  ]
+
   return (
     <Wrapper>
       <h2 className="mb-3">Photo Gallery</h2>
@@ -244,18 +252,13 @@ function Gallery({ data }) {
       <section className="text-center mt-5 mb-3">
         <h2 className="mb-3">Video Gallery</h2>
         <Row>
-          <Col sm="12" md="6">
-            <YouTube videoId="IQS6Ph2sha0" opts={opts} />
-          </Col>
-          <Col sm="12" md="6">
-            <YouTube videoId="zuwBdTC2mgo" opts={opts} />
-          </Col>
-          <Col sm="12" md="6">
-            <YouTube videoId="_p7roePRsOQ" opts={opts} />
-          </Col>
-          <Col sm="12" md="6">
-            <YouTube videoId="4X0BPZDWwVY" opts={opts} />
-          </Col>
+          {videoIdArr.map(id => (
+            <Col key={id} sm="12" md="6" className="mb-3">
+              <LazyLoad once={true} height={"100%"}>
+                <YouTube videoId={id} opts={opts} />
+              </LazyLoad>
+            </Col>
+          ))}
         </Row>
       </section>
     </Wrapper>
