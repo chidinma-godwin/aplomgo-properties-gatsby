@@ -76,10 +76,6 @@ const styles = StyleSheet.create({
     top: 100,
     border: "1px solid black",
   },
-  //   centerImage: {
-  //     alignItems: 'center',
-  //     flexGrow: 1,
-  //   },
 })
 
 function SubscriptionPdf(props) {

@@ -13,6 +13,7 @@ const UnLoadedVideo = styled.div`
   background-color: grey;
   color: #fff;
   width: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

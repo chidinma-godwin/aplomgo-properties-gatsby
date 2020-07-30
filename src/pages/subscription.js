@@ -7,6 +7,13 @@ import { Container } from "react-bootstrap"
 
 export const query = graphql`
   query {
+    allPropertiesJson {
+      nodes {
+        id
+        name
+        shortName
+      }
+    }
     propertiesLogo: file(relativePath: { eq: "properties.jpg" }) {
       childImageSharp {
         fluid {
@@ -58,25 +65,14 @@ function Subscription({ data }) {
         </h3>
         <p>Please select a property from the list below</p>
         <div>
-          <CustomLink to="/subscription/champions-court">
-            Champions Court Estate
-          </CustomLink>
-          <CustomLink to="/subscription/aplom-gold">Aplom Gold City</CustomLink>
-          <CustomLink to="/subscription/amazing-grace">
-            Amazing Grace Estate
-          </CustomLink>
-          <CustomLink to="/subscription/icons-park">
-            Icons Park Estate
-          </CustomLink>
-          <CustomLink to="/subscription/green-meadow">
-            Green Meadow Estate
-          </CustomLink>
-          <CustomLink to="/subscription/abundance-grace">
-            Abundance Grace Estate
-          </CustomLink>
-          <CustomLink to="/subscription/agl-vision">
-            AGL Vision EState
-          </CustomLink>
+          {data.allPropertiesJson.nodes.map(property => (
+            <CustomLink
+              key={property.id}
+              to={`/subscription/${property.shortName}`}
+            >
+              {property.name}
+            </CustomLink>
+          ))}
         </div>
       </div>
     </Wrapper>

@@ -73,6 +73,16 @@ function Properties() {
   `)
   const propertiesList = data.allPropertiesJson.nodes
 
+  const formatPrice = priceString => {
+    const priceArray = priceString.split(" ")
+    priceArray[0] = new Intl.NumberFormat("en-NG", {
+      style: "currency",
+      currency: "NGN",
+      minimumFractionDigits: 0,
+    }).format(priceArray[0])
+    return priceArray.join(" ")
+  }
+
   return (
     <>
       <SectionHeader>Latest properties</SectionHeader>
@@ -104,11 +114,13 @@ function Properties() {
                 <tr>
                   <td>Price</td>
                   <td>
-                    {new Intl.NumberFormat("en-NG", {
-                      style: "currency",
-                      currency: "NGN",
-                      minimumFractionDigits: 0,
-                    }).format(property.price)}
+                    {property.price.split(" ").length > 1
+                      ? formatPrice(property.price)
+                      : new Intl.NumberFormat("en-NG", {
+                          style: "currency",
+                          currency: "NGN",
+                          minimumFractionDigits: 0,
+                        }).format(property.price * 1)}
                   </td>
                 </tr>
               </tbody>

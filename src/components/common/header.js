@@ -269,6 +269,14 @@ function Header({ width }) {
                           Icon's Park Estate
                         </SubLink>
                       </Column>
+                      <Column md={4} className="p-2">
+                        <SubLink
+                          to="/properties/emmanuel"
+                          onClick={() => setShowProperties(false)}
+                        >
+                          Emmanuel Court
+                        </SubLink>
+                      </Column>
                     </DropdownContainer>
                   )
               )}
@@ -327,6 +335,13 @@ function Header({ width }) {
                 onClick={toggleNavbar}
               >
                 Icon's Park Estate
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/properties/emmanuel"
+                onClick={toggleNavbar}
+              >
+                Emmanuel Court
               </NavDropdown.Item>
             </NavDropdown>
           )}

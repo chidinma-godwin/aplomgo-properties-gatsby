@@ -31,7 +31,7 @@ const CarouselCaption = styled(Carousel.Caption)`
 function JumbotronSection() {
   const data = useStaticQuery(graphql`
     query {
-      slide1: file(relativePath: { eq: "abundance-grace.jpg" }) {
+      slide1: file(relativePath: { eq: "amazing-grace.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -52,7 +52,7 @@ function JumbotronSection() {
           }
         }
       }
-      slide4: file(relativePath: { eq: "icons-park.jpg" }) {
+      slide4: file(relativePath: { eq: "emmanuel.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid

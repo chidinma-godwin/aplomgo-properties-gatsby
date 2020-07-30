@@ -52,7 +52,7 @@ const FeaturesCard = styled(Card)`
 
 const FaqAccordion = styled(Accordion)`
   border: 3px solid #ab1010;
-  font-size: 12px;
+  font-size: 16px;
 
   @media (min-width: 991.98px) {
     width: 70%;
