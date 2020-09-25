@@ -27,6 +27,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `#b67f2e`,
+        // Disable the loading spinner.
+        showSpinner: true,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/data/`,
@@ -41,9 +50,9 @@ module.exports = {
         name: `Aplomgo Real Estate and Development`,
         short_name: `Aplomgo Properties`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        background_color: `#b67f2e`,
+        theme_color: `#b67f2e`,
+        display: `standalone`,
         icon: `src/images/favicon.jpg`, // This path is relative to the root of the site.
       },
     },
@@ -59,11 +68,11 @@ module.exports = {
   proxy: [
     {
       prefix: "/api",
-      url: "http://localhost:40000",
+      url: "http://localhost:57000",
     },
     {
       prefix: "/info",
-      url: "http://localhost:40000",
+      url: "http://localhost:57000",
     },
   ],
 }

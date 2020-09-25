@@ -31,9 +31,13 @@ const Wrapper = styled(Container)`
 
 const CustomLink = styled(Link)`
   &&& {
-    color: "blue";
+    color: #a56912;
     display: block;
     margin-bottom: 1em;
+
+    &:hover {
+      color: #03a84e;
+    }
   }
 `
 

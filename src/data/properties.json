@@ -671,7 +671,7 @@
     "agreementFee": 100000,
     "image": "abundance-grace.jpg",
     "description": "Abundance Grace Estate, is found to be one of the fast developing community, located at Odeomi along NNPC pipeline road, Ibeju Lekki.",
-    "price": "500000",
+    "price": "1200000",
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -711,7 +711,7 @@
       },
       {
         "id": 5,
-        "ans": ["Outright payment of the sum of 500,000 Naira only per plot."]
+        "ans": ["Outright payment of the sum of 1.2M Naira only per plot."]
       },
       { "id": 6, "ans": ["600sqm."] },
       { "id": 7, "ans": ["Yes."] },
@@ -774,7 +774,7 @@
   {
     "id": 8,
     "shortName": "emmanuel",
-    "name": "Emmanuel Court",
+    "name": "EMMANUEL COURT",
     "location": "SANGOTEDO",
     "devFee": 350000,
     "surveyFee": 350000,
@@ -823,6 +823,114 @@
         ]
       },
       { "id": 6, "ans": ["300sqm , 450sqm, and 600sqm"] },
+      { "id": 7, "ans": ["Yes."] },
+      {
+        "id": 8,
+        "ans": [
+          "Starter pack comprising a letter of acknowledgement of subscription and receipt."
+        ]
+      },
+      {
+        "id": 9,
+        "ans": [
+          "Survey Plan",
+          "Notifications of Allocation Letter",
+          "Land Agreement",
+          "Contract of Sales."
+        ]
+      },
+      {
+        "id": 10,
+        "ans": [
+          "Yes, You can start building on the land after physical allocation and payment of development levy."
+        ]
+      },
+      { "id": 11, "ans": ["No."] },
+      {
+        "id": 12,
+        "ans": [
+          "Yes, the Estate is in Sections: Residential and Commercial. Note: 'Face-Me-I-Face–You', And High-rise House Will Not Be Permitted in The Estate."
+        ]
+      },
+      {
+        "id": 13,
+        "ans": [
+          "AGL. can buy back plot(s) from subscribers who have paid up on their land or assist the subscribers to get a buyer.",
+          "A charge Of 20% (Covering agency fee @ 10% and transfer documentation fee @ 10%) shall be deducted by the company from the current price of the land."
+        ]
+      },
+      {
+        "id": 14,
+        "ans": [
+          "We strongly advise that cash payments should be paid to APLOM Go. Limited bank account Only. Otherwise, cheques should be issued in favor of APLOM GO Limited. We would not accept responsibility for any liability that may arise as a result of deviation from the above instruction."
+        ]
+      },
+      {
+        "id": 15,
+        "ans": [
+          "Since Most of Our Service Plot(S) Are Marketed by Independent Agent, We Have A Strict No-Refund Policy."
+        ]
+      },
+      {
+        "id": 16,
+        "ans": [
+          "We have a strict No-Refund policy and firmly advice that all installment payment should be remitted to our company account right on schedule to avoid a breach of contract and loss of allocation.",
+          "NOTE: Conner piece, commercial area attract 10% extra charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "shortName": "flo-bliss",
+    "name": "FLO BLISS GARDEN",
+    "location": "ODEOMI, OGUN STATE",
+    "devFee": 350000,
+    "surveyFee": 350000,
+    "agreementFee": 100000,
+    "image": "flo-bliss.jpg",
+    "description": "FLO BLISS GARDEN is located at Eposo-Remo Community, Ogun State.",
+    "price": "500000",
+    "infras": [
+      "Perimeter Fencing",
+      "Earth Road",
+      "Electricity",
+      "Drainage",
+      "Water",
+      "CCTV",
+      "Children Playing Ground",
+      "Basket Ball court"
+    ],
+    "spots": [
+      "Eateries",
+      "Cinema",
+      "Salons",
+      "Supermarkets",
+      "Health Facilities",
+      "Arcade and Sport Centre",
+      "Gym and Fitness Centre"
+    ],
+    "answers": [
+      {
+        "id": 1,
+        "ans": ["FLO BLISS GARDEN is located at ODEOMI, OGUN STATE."]
+      },
+      {
+        "id": 2,
+        "ans": ["AGL. Property Development Powered by APLOM Go Limited."]
+      },
+      { "id": 3, "ans": ["Excision in progress"] },
+      {
+        "id": 4,
+        "ans": [
+          "The land is free from every known Government acquisition or interest and adverse claims."
+        ]
+      },
+      {
+        "id": 5,
+        "ans": ["Outright payment of sum of 500,000 Naira only PER PLOT "]
+      },
+      { "id": 6, "ans": ["600sqm/ Plot."] },
       { "id": 7, "ans": ["Yes."] },
       {
         "id": 8,

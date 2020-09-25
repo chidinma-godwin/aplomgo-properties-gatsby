@@ -24,19 +24,28 @@ const Popup = styled(ReactModal)`
   border: 0px;
   background: rgb(255, 255, 255);
   overflow: auto;
-  border-radius: 4px;
+  border-radius: 10px;
   outline: none;
   padding: 1.5em;
   display: block;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 70%;
+  max-width: 60%;
   min-height: 60vh;
+  height: 75%;
 
   @media (max-width: 500px) {
+    height: 80%;
+  }
+
+  @media (max-width: 770px) {
     max-width: 90%;
   }
+`
+
+const Wrapper = styled.div`
+  height: 100%;
 `
 
 const modalStyles = {
@@ -46,16 +55,31 @@ const modalStyles = {
   },
 }
 
+const ModalHeader = styled.h2`
+  text-align: center;
+  letter-spacing: 3px;
+  height: 10%;
+  font-weight: 900;
+
+  @media (max-width: 520px) {
+    font-size: 1.5rem;
+  }
+`
+
 const PromoImage = styled(Img)`
-  height: 65vh;
+  height: 50%;
   width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 
-  @media (max-width: 499.98px) {
-    height: fit-content;
+  @media (max-width: 400px) {
+    height: 45%;
   }
+
+  /* @media (max-width: 499.98px) {
+    height: fit-content;
+  } */
   @media (min-width: 500px) {
     img {
       object-fit: contain !important;
@@ -63,16 +87,38 @@ const PromoImage = styled(Img)`
   }
 `
 
+const Detail = styled.div`
+  height: 20%;
+  font-weight: 700;
+  text-align: center;
+
+  h4 {
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 14px;
+    font-weight: 500;
+    height: 25%;
+  }
+`
+
 const ButtonsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 20%;
 `
 
 function PromoModal() {
   const data = useStaticQuery(graphql`
     query {
-      champion: file(relativePath: { eq: "champion.jpg" }) {
+      independence: file(relativePath: { eq: "nigeria.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 700) {
             ...GatsbyImageSharpFluid
@@ -107,18 +153,24 @@ function PromoModal() {
       style={modalStyles}
       contentLabel="modal"
     >
-      <div>
+      <Wrapper>
+        <ModalHeader>Independence Promo!!!</ModalHeader>
         <PromoImage
-          fluid={data.champion.childImageSharp.fluid}
+          fluid={data.independence.childImageSharp.fluid}
           className="mb-3"
         />
+        <Detail>
+          <h4>Aplomgo presents two mega promos</h4>
+          <p>One Million Naira discount on all properties in Sangotedo</p>
+          <p>Buy two plots of lands and get one free</p>
+        </Detail>
         <ButtonsContainer>
           <Button className="mr-3">
             <CustomLink to="/information/promos">View More</CustomLink>
           </Button>
           <Button onClick={closeModal}>Close</Button>
         </ButtonsContainer>
-      </div>
+      </Wrapper>
     </Popup>
   )
 }

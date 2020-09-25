@@ -8,6 +8,7 @@ import {
   NavDropdown,
 } from "react-bootstrap"
 import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { animated } from "react-spring"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -68,6 +69,7 @@ const CollapseWrapper = styled(Nav)`
     background-color: #212529;
     padding: 15px;
     height: 100vh;
+    overflow: auto;
 
     & .nav-link {
       color: #fff !important;
@@ -148,6 +150,19 @@ const NavbarCollapse = styled(Navbar.Collapse)`
 `
 
 function Header({ width }) {
+  const data = useStaticQuery(graphql`
+    query {
+      allPropertiesJson {
+        nodes {
+          id
+          name
+          shortName
+        }
+      }
+    }
+  `)
+  const properties = data.allPropertiesJson.nodes
+
   const [showProperties, setShowProperties] = useState(false)
   const [info, setInfo] = useState(false)
   const [navWidth, setNavWidth] = useState(null)
@@ -213,70 +228,16 @@ function Header({ width }) {
                 ({ item, key, props }) =>
                   item && (
                     <DropdownContainer key={key} style={props}>
-                      <Column md={4} className="p-2">
-                        <SubLink
-                          to="/properties/abundance-grace"
-                          onClick={() => setShowProperties(false)}
-                        >
-                          Abundance Grace Estate
-                        </SubLink>
-                      </Column>
-                      <Column md={4} className="p-2">
-                        <SubLink
-                          to="/properties/agl-vision"
-                          onClick={() => setShowProperties(false)}
-                        >
-                          AGL Vision Estate
-                        </SubLink>
-                      </Column>
-                      <Column md={4} className="p-2">
-                        <SubLink
-                          to="/properties/amazing-grace"
-                          onClick={() => setShowProperties(false)}
-                        >
-                          Amazing Grace Estate
-                        </SubLink>
-                      </Column>
-                      <Column md={4} className="p-2">
-                        <SubLink
-                          to="/properties/aplom-gold"
-                          onClick={() => setShowProperties(false)}
-                        >
-                          Aplom Gold City
-                        </SubLink>
-                      </Column>
-                      <Column md={4} className="p-2">
-                        <SubLink
-                          to="/properties/champions-court"
-                          onClick={() => setShowProperties(false)}
-                        >
-                          Champions Court Estate
-                        </SubLink>
-                      </Column>
-                      <Column md={4} className="p-2">
-                        <SubLink
-                          to="/properties/green-meadow"
-                          onClick={() => setShowProperties(false)}
-                        >
-                          Green Meadow Estate
-                        </SubLink>
-                      </Column>
-                      <Column md={4} className="p-2">
-                        <SubLink
-                          to="/properties/icons-park"
-                          onClick={() => setShowProperties(false)}
-                        >
-                          Icon's Park Estate
-                        </SubLink>
-                      </Column>
-                      <Column md={4} className="p-2">
-                        <SubLink
-                          to="/properties/emmanuel"
-                          onClick={() => setShowProperties(false)}
-                        >
-                          Emmanuel Court
-                        </SubLink>
-                      </Column>
+                      {properties.map(property => (
+                        <Column key={property.id} md={4} className="p-2">
+                          <SubLink
+                            to={`/properties/${property.shortName}`}
+                            onClick={() => setShowProperties(false)}
+                          >
+                            {property.name}
+                          </SubLink>
+                        </Column>
+                      ))}
                     </DropdownContainer>
                   )
               )}
@@ -287,62 +248,17 @@ function Header({ width }) {
               as={LinkText}
               id="basic-nav-dropdown"
             >
-              <NavDropdown.Item
-                as={Link}
-                to="/properties/abundance-grace"
-                onClick={toggleNavbar}
-              >
-                Abundance Grace Estate
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/properties/agl-vision"
-                onClick={toggleNavbar}
-              >
-                AGL Vision Estate
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/properties/amazing-grace"
-                onClick={toggleNavbar}
-              >
-                Amazing Grace Estate
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/properties/aplom-gold"
-                onClick={toggleNavbar}
-              >
-                Aplom Gold City
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/properties/champions-court"
-                onClick={toggleNavbar}
-              >
-                Champions Court Estate
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/properties/green-meadow"
-                onClick={toggleNavbar}
-              >
-                Green Meadow Estate
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/properties/icons-park"
-                onClick={toggleNavbar}
-              >
-                Icon's Park Estate
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/properties/emmanuel"
-                onClick={toggleNavbar}
-              >
-                Emmanuel Court
-              </NavDropdown.Item>
+              {properties.map(property => (
+                <NavDropdown.Item
+                  key={property.id}
+                  className="pt-2 pb-2"
+                  as={Link}
+                  to={`/properties/${property.shortName}`}
+                  onClick={toggleNavbar}
+                >
+                  {property.name}
+                </NavDropdown.Item>
+              ))}
             </NavDropdown>
           )}
 
@@ -367,7 +283,7 @@ function Header({ width }) {
                   className="mb-3"
                   onClick={() => setInfo(false)}
                 >
-                  Photo Gallery
+                  Gallery
                 </SubLink>
 
                 <SubLink
@@ -403,6 +319,7 @@ function Header({ width }) {
             >
               <NavDropdown.Item
                 as={Link}
+                className="pt-2 pb-2"
                 to="/information/about"
                 onClick={toggleNavbar}
               >
@@ -410,6 +327,7 @@ function Header({ width }) {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
+                className="pt-2 pb-2"
                 to="/information/gallery"
                 onClick={toggleNavbar}
               >
@@ -417,6 +335,7 @@ function Header({ width }) {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
+                className="pt-2 pb-2"
                 to="/information/faqs"
                 onClick={toggleNavbar}
               >
@@ -424,6 +343,7 @@ function Header({ width }) {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
+                className="pt-2 pb-2"
                 to="/information/promos"
                 onClick={toggleNavbar}
               >
@@ -431,6 +351,7 @@ function Header({ width }) {
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
+                className="pt-2 pb-2"
                 to="/information/terms"
                 onClick={toggleNavbar}
               >

@@ -49,7 +49,13 @@ function VideoSection() {
     }
   `)
 
-  const videoId = ["IQS6Ph2sha0", "_p7roePRsOQ", "zuwBdTC2mgo", "4X0BPZDWwVY"]
+  const videoId = [
+    "46vPRO6bt6g",
+    "IQS6Ph2sha0",
+    "_p7roePRsOQ",
+    "zuwBdTC2mgo",
+    "4X0BPZDWwVY",
+  ]
   const [currentVideoId, setCurrentVideoId] = useState("")
   const [index, setIndex] = useState(0)
   const [autoplay, setAutoplay] = useState(0)
@@ -103,7 +109,7 @@ function VideoSection() {
           once={true}
         >
           <VideoPlayer
-            videoId={currentVideoId || "IQS6Ph2sha0"}
+            videoId={currentVideoId || "46vPRO6bt6g"}
             opts={opts}
             onReady={videoReady}
             onEnd={playNext}

@@ -1,25 +1,35 @@
 [
   {
     "id": 1,
-    "name": "Amazing Grace Estate",
-    "shortName": "amazing-grace",
-    "image": "amazingGrace",
-    "description": "Amazing Grace Estate is located at Elerangbe. Elerangbe is a community in Ibeju Lekki, with about 10mins drive to Ajah",
-    "details": [
-      "Buy 5 plots outright and get 1 plot free at 750,000 naira per plot"
-    ],
+    "name": "Icons Park Estate",
+    "shortName": "icons-park",
+    "image": "iconsPark",
+    "description": "Icons Park Estate is located in Sangotedo behind Shoprite, and it is about 10mins drive to Lekki.",
+    "details": ["One Million Naira discount"],
+    "normalPrice": "8500000",
+    "promoPrice": "7500000",
     "endDate": "To be communicated"
   },
   {
     "id": 2,
-    "name": "Champions Court Estate",
-    "shortName": "champions-court",
-    "image": "champion",
-    "description": "CHAMPIONS COURT ESTATE is located at IBEJU TOWN EPE Express way, its about 20 Minutes from Ajah Bus Stop.",
-    "details": [
-      "Buy 1 plot of land and get a bag of rice and cooking oil",
-      "Buy 2 plots outright and get one ram"
-    ],
-    "endDate": "August 31, 2020"
+    "name": "AGL VISION ESTATE",
+    "shortName": "agl-vision",
+    "image": "aglVision",
+    "description": "AGL Vision is located at Sangotedo, behind Shoprite. It is surrounded by developed Estate.",
+    "details": ["One Million Naira discount"],
+    "normalPrice": "7000000",
+    "promoPrice": "6000000",
+    "endDate": "To be communicated"
+  },
+  {
+    "id": 3,
+    "name": "Emmanuel Court",
+    "shortName": "emmanuel",
+    "image": "emmanuel",
+    "description": "Emmanuel Court is located at Sangotedo, and it is about 2mins drive from Shoprite.",
+    "details": ["One Million Naira discount for 600sqm"],
+    "normalPrice": "12000 per sqm",
+    "promoPrice": "10500 per sqm",
+    "endDate": "To be communicated"
   }
 ]
