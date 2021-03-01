@@ -56,13 +56,13 @@ const Wrapper = styled(Container)`
   margin-bottom: 3em;
 `
 
-const PromoHeader = styled.h2`
-  text-align: center;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  font-weight: bolder;
-  letter-spacing: 3px;
-`
+// const PromoHeader = styled.h2`
+//   text-align: center;
+//   margin-top: 2em;
+//   margin-bottom: 1em;
+//   font-weight: bolder;
+//   letter-spacing: 3px;
+// `
 
 const PromoSubHeader = styled.h3`
   text-align: center;
@@ -134,19 +134,10 @@ function Promos({ data }) {
 
   return (
     <Wrapper>
-      <PromoHeader>Independence Promo</PromoHeader>
-
-      <PromoWrapper>
-        <Img fluid={data.independence.childImageSharp.fluid} className="mb-5" />
-        <Description>
-          In the spirit of oneness, Aplomgo presents Buy two get one free and
-          One Million Naira discount promo. This Promo is available for the
-          following properties:
-        </Description>
-      </PromoWrapper>
-
       <section>
-        <PromoSubHeader>One Million Naira Discount Promo</PromoSubHeader>
+        <PromoSubHeader style={{ marginTop: "4em" }}>
+          One Million Naira Discount Promo
+        </PromoSubHeader>
         {promoList.map(promo => (
           <PromoWrapper key={promo.id}>
             <SectionSubHeader>{promo.name}</SectionSubHeader>

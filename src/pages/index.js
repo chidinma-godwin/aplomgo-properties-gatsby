@@ -4,7 +4,7 @@ import JumbotronSection from "../components/homeSubComponents/jumbotronSection"
 import VideoSection from "../components/homeSubComponents/videoSection"
 import ExclusiveOffers from "../components/homeSubComponents/exclusiveOffers"
 import Properties from "../components/homeSubComponents/properties"
-import PromoModal from "../components/homeSubComponents/promoModal"
+// import PromoModal from "../components/homeSubComponents/promoModal"
 
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
         <Properties />
         <ExclusiveOffers />
         <VideoSection />
-        <PromoModal />
+        {/* <PromoModal /> */}
       </Container>
     </>
   )
