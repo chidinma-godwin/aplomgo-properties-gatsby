@@ -6,6 +6,7 @@ import {
   Container,
   ListGroup,
   CardDeck,
+  Table,
 } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import styled from "styled-components"
@@ -50,6 +51,15 @@ const FeaturesCard = styled(Card)`
   border: 3px solid #ab1010;
 `
 
+const PriceCard = styled(FeaturesCard)`
+  @media (min-width: 991.98px) {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+`
+
 const FaqAccordion = styled(Accordion)`
   border: 3px solid #ab1010;
   font-size: 16px;
@@ -79,6 +89,10 @@ const LayoutImage = styled(Image)`
   margin-left: auto;
 `
 
+const PropertyTable = styled(Table)`
+  font-size: 16px;
+`
+
 function Property({ pageContext: { property }, location }) {
   //   const { property } = props.match.params
   const successMsg = location && location.state && location.state.success
@@ -94,6 +108,7 @@ function Property({ pageContext: { property }, location }) {
     spots,
     infras,
     legals,
+    pricePerSize,
   } = currentProperty
 
   const questions = getQuestions(name)
@@ -106,6 +121,16 @@ function Property({ pageContext: { property }, location }) {
     return null
   })
 
+  const formatPrice = price => {
+    const formattedPrice = new Intl.NumberFormat("en-NG", {
+      style: "currency",
+      currency: "NGN",
+      minimumFractionDigits: 0,
+    }).format(price)
+
+    return formattedPrice
+  }
+
   return (
     <Wrapper>
       <CustomImage
@@ -114,6 +139,24 @@ function Property({ pageContext: { property }, location }) {
       />
       <h2>{name}</h2>
       <p>{description}</p>
+      <PriceCard>
+        <PropertyTable className="text-center">
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pricePerSize.map(({ size, price }) => (
+              <tr>
+                <td>{size}</td>
+                <td>{formatPrice(price)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </PropertyTable>
+      </PriceCard>
       <h3 className="mt-5 mb-4">Features</h3>
       <FeaturesCardDeck>
         <FeaturesCard>

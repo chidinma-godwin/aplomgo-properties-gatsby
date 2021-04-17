@@ -20,6 +20,10 @@ exports.createPages = async ({ actions, graphql }) => {
             ans
             id
           }
+          pricePerSize {
+            size
+            price
+          }
           id
           infras
           description

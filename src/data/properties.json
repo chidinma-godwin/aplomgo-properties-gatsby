@@ -11,6 +11,14 @@
     "layout": "aplom-gold-city-layout.PNG",
     "description": "Aplom Gold City is located at Eposo-Remo Community, Ogun State.",
     "price": "650000",
+    "pricePerSize": [
+      { "size": "250sqm", "price": 325000 },
+      {
+        "size": "350sqm",
+        "price": 487500
+      },
+      { "size": "500sqm", "price": 650000 }
+    ],
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -125,6 +133,14 @@
     "layout": "champions-layout.jpg",
     "description": "Champions Court Estate is located at the center of ibeju Town, Ibeju Lekki",
     "price": "2500000",
+    "pricePerSize": [
+      { "size": "300sqm", "price": 1250000 },
+      {
+        "size": "450sqm",
+        "price": 1875000
+      },
+      { "size": "600sqm", "price": 2500000 }
+    ],
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -236,6 +252,14 @@
     "layout": "champions-layout.jpg",
     "description": "Champions Court Estate is located at the center of ibeju Town, Ibeju Lekki",
     "price": "800000",
+    "pricePerSize": [
+      { "size": "300sqm", "price": 400000 },
+      {
+        "size": "450sqm",
+        "price": 600000
+      },
+      { "size": "600sqm", "price": 800000 }
+    ],
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -346,6 +370,14 @@
     "image": "icons-park.jpg",
     "description": "Icons Park Estate is located in Sangotedo behind Shoprite, and it is about 10mins drive to Lekki.",
     "price": "12000000",
+    "pricePerSize": [
+      { "size": "300sqm", "price": 6000000 },
+      {
+        "size": "450sqm",
+        "price": 9000000
+      },
+      { "size": "600sqm", "price": 12000000 }
+    ],
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -460,6 +492,14 @@
     "image": "amazing-grace.jpg",
     "description": "Amazing Grace Estate is located at Elerangbe. Elerangbe is a community in Ibeju Lekki, with about 10mins drive to Ajah",
     "price": "800000",
+    "pricePerSize": [
+      { "size": "300sqm", "price": 400000 },
+      {
+        "size": "450sqm",
+        "price": 600000
+      },
+      { "size": "600sqm", "price": 800000 }
+    ],
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -567,6 +607,7 @@
     "image": "agl-vision.jpg",
     "description": "AGL Vision is located at Sangotedo, behind Shoprite. It is surrounded by developed Estate.",
     "price": "7000000",
+    "pricePerSize": [{ "size": "600sqm", "price": 7000000 }],
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -676,6 +717,7 @@
     "image": "green-meadow.jpg",
     "description": "Green Meadow is at the center of new Lagos, Free Trade Zone is a fast developing location, Dangote Refinery proposed site. It is located at Ibeju Lekki.",
     "price": "4500000",
+    "pricePerSize": [{ "size": "600sqm", "price": 4500000 }],
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -781,6 +823,14 @@
     "image": "abundance-grace.jpg",
     "description": "Abundance Grace Estate, is found to be one of the fast developing community, located at Odeomi along NNPC pipeline road, Ibeju Lekki.",
     "price": "700000",
+    "pricePerSize": [
+      { "size": "300sqm", "price": 350000 },
+      {
+        "size": "450sqm",
+        "price": 525000
+      },
+      { "size": "600sqm", "price": 700000 }
+    ],
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -891,6 +941,14 @@
     "image": "emmanuel.jpg",
     "description": "Emmanuel Court is located at Sangotedo, and it is about 2mins drive from Shoprite.",
     "price": "12000 per sqm",
+    "pricePerSize": [
+      { "size": "300sqm", "price": 3600000 },
+      {
+        "size": "450sqm",
+        "price": 5400000
+      },
+      { "size": "600sqm", "price": 7200000 }
+    ],
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -1000,6 +1058,7 @@
     "image": "flo-bliss.jpg",
     "description": "FLO BLISS GARDEN is located at Eposo-Remo Community, Ogun State.",
     "price": "500000",
+    "pricePerSize": [{ "size": "600sqm", "price": 500000 }],
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
