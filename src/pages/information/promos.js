@@ -1,6 +1,6 @@
 import React from "react"
 import NewsLetter from "../../components/common/newsLetter"
-import { Card, Table, Container, Button } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import styled from "styled-components"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
@@ -12,11 +12,6 @@ export const query = graphql`
         id
         name
         shortName
-        description
-        details
-        normalPrice
-        promoPrice
-        endDate
         image
       }
     }
@@ -27,21 +22,35 @@ export const query = graphql`
         }
       }
     }
-    aglVision: file(relativePath: { eq: "agl-vision.jpg" }) {
+    aplomGoldCity: file(relativePath: { eq: "aplom-gold-city.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    emmanuel: file(relativePath: { eq: "emmanuel.jpg" }) {
+    champion: file(relativePath: { eq: "champion.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    independence: file(relativePath: { eq: "nigeria.jpg" }) {
+    champion2: file(relativePath: { eq: "champion2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    amazingGrace: file(relativePath: { eq: "amazing-grace.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    abundanceGrace: file(relativePath: { eq: "abundance-grace.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
           ...GatsbyImageSharpFluid
@@ -56,14 +65,6 @@ const Wrapper = styled(Container)`
   margin-bottom: 3em;
 `
 
-// const PromoHeader = styled.h2`
-//   text-align: center;
-//   margin-top: 2em;
-//   margin-bottom: 1em;
-//   font-weight: bolder;
-//   letter-spacing: 3px;
-// `
-
 const PromoSubHeader = styled.h3`
   text-align: center;
   margin-top: 2em;
@@ -75,32 +76,8 @@ const SectionSubHeader = styled.h3`
   margin-bottom: 1em;
 `
 
-const FeaturesCard = styled(Card)`
-  &&& {
-    border: 2px solid #b67f2e;
-  }
-`
-
 const PromoWrapper = styled.div`
-  margin-bottom: 5em;
-`
-const PropertyTable = styled(Table)`
-  font-size: 16px;
-`
-
-const List = styled.ul`
-  list-style: none;
-  padding: 0;
-`
-
-const Description = styled.p`
-  font-size: 1.5rem;
-`
-
-const CustomButton = styled(Button)`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 7em;
 `
 
 const CustomLink = styled(Link)`
@@ -119,85 +96,21 @@ const Subscribe = styled.p`
 function Promos({ data }) {
   const promoList = data.allPromoJson.nodes
 
-  const formatPrice = priceString => {
-    const priceArray = priceString.split(" ")
-    priceArray[0] = new Intl.NumberFormat("en-NG", {
-      style: "currency",
-      currency: "NGN",
-      minimumFractionDigits: 0,
-    }).format(priceArray[0] * 1)
-
-    const formattedPrice = priceArray.join(" ")
-
-    return formattedPrice
-  }
-
   return (
     <Wrapper>
       <section>
-        <PromoSubHeader style={{ marginTop: "4em" }}>
-          One Million Naira Discount Promo
-        </PromoSubHeader>
+        <PromoSubHeader>Buy Five Get One Free Promo</PromoSubHeader>
         {promoList.map(promo => (
           <PromoWrapper key={promo.id}>
             <SectionSubHeader>{promo.name}</SectionSubHeader>
-            <Img
-              fluid={data[promo.image].childImageSharp.fluid}
-              className="mb-5"
-            />
-            <FeaturesCard className="mb-5">
-              <PropertyTable>
-                <tbody>
-                  <tr>
-                    <td>Description</td>
-                    <td>{promo.description}</td>
-                  </tr>
-                  <tr>
-                    <td>Offer</td>
-                    <td>
-                      <List>
-                        {promo.details.map((detail, index) => (
-                          <li key={index}>{detail}</li>
-                        ))}
-                      </List>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>Normal Price</td>
-                    <td>{formatPrice(promo.normalPrice)}</td>
-                  </tr>
-
-                  <tr>
-                    <td>Promo Price</td>
-                    <td>{formatPrice(promo.promoPrice)}</td>
-                  </tr>
-
-                  <tr>
-                    <td>End Date</td>
-                    <td>{promo.endDate}</td>
-                  </tr>
-                </tbody>
-              </PropertyTable>
-              <Card.Body>
-                <CustomButton>
-                  <CustomLink to={`/properties/${promo.shortName}`}>
-                    View Property
-                  </CustomLink>
-                </CustomButton>
-              </Card.Body>
-            </FeaturesCard>
+            <CustomLink to={`/properties/${promo.shortName}`}>
+              <Img
+                fluid={data[promo.image].childImageSharp.fluid}
+                className="mb-5"
+              />
+            </CustomLink>
           </PromoWrapper>
         ))}
-      </section>
-
-      <section>
-        <PromoSubHeader>Buy Two Get One Free Promo</PromoSubHeader>
-        <PromoWrapper>
-          <Description>
-            This promo is available for all other properties not listed above.
-          </Description>
-        </PromoWrapper>
       </section>
 
       <Subscribe>

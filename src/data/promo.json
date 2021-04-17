@@ -3,33 +3,36 @@
     "id": 1,
     "name": "Icons Park Estate",
     "shortName": "icons-park",
-    "image": "iconsPark",
-    "description": "Icons Park Estate is located in Sangotedo behind Shoprite, and it is about 10mins drive to Lekki.",
-    "details": ["One Million Naira discount"],
-    "normalPrice": "8500000",
-    "promoPrice": "7500000",
-    "endDate": "To be communicated"
+    "image": "iconsPark"
   },
   {
     "id": 2,
-    "name": "AGL VISION ESTATE",
-    "shortName": "agl-vision",
-    "image": "aglVision",
-    "description": "AGL Vision is located at Sangotedo, behind Shoprite. It is surrounded by developed Estate.",
-    "details": ["One Million Naira discount"],
-    "normalPrice": "7000000",
-    "promoPrice": "6000000",
-    "endDate": "To be communicated"
+    "name": "APLOM GOLD CITY",
+    "shortName": "aplom-gold",
+    "image": "aplomGoldCity"
   },
   {
     "id": 3,
-    "name": "Emmanuel Court",
-    "shortName": "emmanuel",
-    "image": "emmanuel",
-    "description": "Emmanuel Court is located at Sangotedo, and it is about 2mins drive from Shoprite.",
-    "details": ["One Million Naira discount for 600sqm"],
-    "normalPrice": "12000 per sqm",
-    "promoPrice": "10500 per sqm",
-    "endDate": "To be communicated"
+    "name": "Chanpions Court Estate",
+    "shortName": "champions-court",
+    "image": "champion"
+  },
+  {
+    "id": 4,
+    "name": "Chanpions Court Phase 2",
+    "shortName": "champions-court2",
+    "image": "champion2"
+  },
+  {
+    "id": 5,
+    "name": "AMAZING GRACE ESTATE",
+    "shortName": "amazing-grace",
+    "image": "amazingGrace"
+  },
+  {
+    "id": 6,
+    "name": "ABUNDANCE GRACE ESTATE",
+    "shortName": "abundance-grace",
+    "image": "abundanceGrace"
   }
 ]

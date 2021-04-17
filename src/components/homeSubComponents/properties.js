@@ -1,7 +1,7 @@
 import React from "react"
 import { CardGroup, Card, Table } from "react-bootstrap"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 const SectionHeader = styled.h2`
@@ -45,6 +45,14 @@ const PropertyTable = styled(Table)`
   font-size: 12px;
 `
 
+const CustomLink = styled(Link)`
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
+`
+
 function Properties() {
   const data = useStaticQuery(graphql`
     query {
@@ -57,6 +65,7 @@ function Properties() {
           id
           location
           name
+          shortName
           price
           fields {
             propertyImage {
@@ -89,18 +98,17 @@ function Properties() {
       <FeaturesCardDeck>
         {propertiesList.map(property => (
           <FeaturesCard key={property.id}>
-            <CardImg
-              as={Img}
-              variant="top"
-              fluid={property.fields.propertyImage.childImageSharp.fluid}
-              className="d-block w-100"
-            />
+            <CustomLink to={`/properties/${property.shortName}`}>
+              <CardImg
+                as={Img}
+                variant="top"
+                fluid={property.fields.propertyImage.childImageSharp.fluid}
+                className="d-block w-100"
+              />
+            </CustomLink>
             <CardBody>
               <CardTitle>{property.name}</CardTitle>
             </CardBody>
-            {/* <ListGroup variant='flush'>
-              <ListGroup.Item>Hello</ListGroup.Item>
-            </ListGroup> */}
             <PropertyTable size="sm">
               <tbody>
                 <tr>

@@ -226,15 +226,16 @@
   },
   {
     "id": 3,
-    "shortName": "icons-park",
-    "name": "ICONS PARK ESTATE",
-    "location": "SANGOTEDO, ETI-OSA L.G.A",
+    "shortName": "champions-court2",
+    "name": "CHAMPIONS COURT PHASE 2",
+    "location": "IBA OLOJA, IBEJU LEKKI L.G.A",
     "devFee": 350000,
     "surveyFee": 350000,
-    "agreementFee": 200000,
-    "image": "icons-park.jpg",
-    "description": "Icons Park Estate is located in Sangotedo behind Shoprite, and it is about 10mins drive to Lekki.",
-    "price": "8500000",
+    "agreementFee": 100000,
+    "image": "champion2.jpg",
+    "layout": "champions-layout.jpg",
+    "description": "Champions Court Estate is located at the center of ibeju Town, Ibeju Lekki",
+    "price": "800000",
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -254,33 +255,27 @@
       "Arcade and Sport Centre",
       "Gym and Fitness Centre"
     ],
-    "legals": [
-      "Deed of Contract",
-      "Deed of Assignment (Registered)",
-      "Certificate of occupancy",
-      "Land Survey"
-    ],
     "answers": [
       {
         "id": 1,
         "ans": [
-          "Icons Park Estate is located at SMART CITY, BEHIND SHOPRITE SANGOTEDO off Lekki Express way. Its about 10 Minutes from Ajah Bus Stop.."
+          "CHAMPIONS COURT PHASE 2 is located at IBEJU TOWN EPE Express way, its about 20 Minutes from Ajah Bus Stop."
         ]
       },
       {
         "id": 2,
         "ans": ["AGL. Property Development Powered by APLOM Go Limited."]
       },
-      { "id": 3, "ans": ["C of O"] },
+      { "id": 3, "ans": ["Government Excition."] },
       {
         "id": 4,
-        "ans": null
+        "ans": [
+          "The land is free from every known Government acquisition or interest and adverse claims."
+        ]
       },
       {
         "id": 5,
-        "ans": [
-          "Outright Payment of the sum of 8.5 Million naira only PER PLOT"
-        ]
+        "ans": ["Outright payment of Sum of 800000 Naira only per plot."]
       },
       { "id": 6, "ans": ["600sqm."] },
       { "id": 7, "ans": ["Yes."] },
@@ -342,6 +337,120 @@
   },
   {
     "id": 4,
+    "shortName": "icons-park",
+    "name": "ICON'S PARK ESTATE",
+    "location": "SANGOTEDO, ETI-OSA L.G.A",
+    "devFee": 350000,
+    "surveyFee": 350000,
+    "agreementFee": 200000,
+    "image": "icons-park.jpg",
+    "description": "Icons Park Estate is located in Sangotedo behind Shoprite, and it is about 10mins drive to Lekki.",
+    "price": "12000000",
+    "infras": [
+      "Perimeter Fencing",
+      "Earth Road",
+      "Electricity",
+      "Drainage",
+      "Water",
+      "CCTV",
+      "Children Playing Ground",
+      "Basket Ball court"
+    ],
+    "spots": [
+      "Eateries",
+      "Cinema",
+      "Salons",
+      "Supermarkets",
+      "Health Facilities",
+      "Arcade and Sport Centre",
+      "Gym and Fitness Centre"
+    ],
+    "legals": [
+      "Deed of Contract",
+      "Deed of Assignment (Registered)",
+      "Certificate of occupancy",
+      "Land Survey"
+    ],
+    "answers": [
+      {
+        "id": 1,
+        "ans": [
+          "Icons Park Estate is located at SMART CITY, BEHIND SHOPRITE SANGOTEDO off Lekki Express way. Its about 10 Minutes from Ajah Bus Stop.."
+        ]
+      },
+      {
+        "id": 2,
+        "ans": ["AGL. Property Development Powered by APLOM Go Limited."]
+      },
+      { "id": 3, "ans": ["C of O"] },
+      {
+        "id": 4,
+        "ans": null
+      },
+      {
+        "id": 5,
+        "ans": ["Outright Payment of the sum of 12 Million naira only PER PLOT"]
+      },
+      { "id": 6, "ans": ["600sqm."] },
+      { "id": 7, "ans": ["Yes."] },
+      {
+        "id": 8,
+        "ans": [
+          "Starter pack comprising a letter of acknowledgement of subscription and receipt."
+        ]
+      },
+      {
+        "id": 9,
+        "ans": [
+          "Survey Plan",
+          "Notifications of Allocation Letter",
+          "Land Agreement",
+          "Contract of Sales."
+        ]
+      },
+      {
+        "id": 10,
+        "ans": [
+          "Yes, You can start building on the land after physical allocation and payment of development levy."
+        ]
+      },
+      { "id": 11, "ans": ["No."] },
+      {
+        "id": 12,
+        "ans": [
+          "Yes, the Estate is in Sections: Residential and Commercial. Note: 'Face-Me-I-Face–You', And High-rise House Will Not Be Permitted in The Estate."
+        ]
+      },
+      {
+        "id": 13,
+        "ans": [
+          "AGL. can buy back plot(s) from subscribers who have paid up on their land or assist the subscribers to get a buyer.",
+          "A charge Of 20% (Covering agency fee @ 10% and transfer documentation fee @ 10%) shall be deducted by the company from the current price of the land."
+        ]
+      },
+      {
+        "id": 14,
+        "ans": [
+          "We strongly advise that cash payments should be paid to APLOM Go. Limited bank account Only. Otherwise, cheques should be issued in favor of APLOM GO Limited. We would not accept responsibility for any liability that may arise as a result of deviation from the above instruction."
+        ]
+      },
+      {
+        "id": 15,
+        "ans": [
+          "Since Most of Our Service Plot(S) Are Marketed by Independent Agent, We Have A Strict No-Refund Policy."
+        ]
+      },
+      {
+        "id": 16,
+        "ans": [
+          "We have a strict No-Refund policy and firmly advice that all installment payment should be remitted to our company account right on schedule to avoid a breach of contract and loss of allocation.",
+          "NOTE: Conner piece, commercial area attract 10% extra charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
     "shortName": "amazing-grace",
     "name": "AMAZING GRACE ESTATE",
     "location": "ELERANGBE IBEJU LEKKI LGA",
@@ -350,7 +459,7 @@
     "agreementFee": 100000,
     "image": "amazing-grace.jpg",
     "description": "Amazing Grace Estate is located at Elerangbe. Elerangbe is a community in Ibeju Lekki, with about 10mins drive to Ajah",
-    "price": "750000",
+    "price": "800000",
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -387,7 +496,7 @@
       },
       {
         "id": 5,
-        "ans": ["Outright Payment of the sum of 750,000 Naira only PER PLOT."]
+        "ans": ["Outright Payment of the sum of 800,000 Naira only PER PLOT."]
       },
       { "id": 6, "ans": ["600sqm."] },
       { "id": 7, "ans": ["Yes."] },
@@ -448,7 +557,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "shortName": "agl-vision",
     "name": "AGL VISION ESTATE",
     "location": "SANGOTEDO AREA OF ETI-OSA L.G.A",
@@ -557,7 +666,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 7,
     "shortName": "green-meadow",
     "name": "GREEN MEADOW ESTATE",
     "location": "1ST ONIGANRINGAN TOWN, FREE TRADE ZONE IBEJU LEKKI LGA",
@@ -662,7 +771,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 8,
     "shortName": "abundance-grace",
     "name": "ABUNDANCE GRACE ESTATE",
     "location": "ODEOMI TOWN, ALONG NNPC/LNG ROAD",
@@ -671,7 +780,7 @@
     "agreementFee": 100000,
     "image": "abundance-grace.jpg",
     "description": "Abundance Grace Estate, is found to be one of the fast developing community, located at Odeomi along NNPC pipeline road, Ibeju Lekki.",
-    "price": "1200000",
+    "price": "700000",
     "infras": [
       "Perimeter Fencing",
       "Earth Road",
@@ -711,7 +820,7 @@
       },
       {
         "id": 5,
-        "ans": ["Outright payment of the sum of 1.2M Naira only per plot."]
+        "ans": ["Outright payment of the sum of 700,000 Naira only per plot."]
       },
       { "id": 6, "ans": ["600sqm."] },
       { "id": 7, "ans": ["Yes."] },
@@ -772,7 +881,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 9,
     "shortName": "emmanuel",
     "name": "EMMANUEL COURT",
     "location": "SANGOTEDO",
@@ -881,7 +990,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 10,
     "shortName": "flo-bliss",
     "name": "FLO BLISS GARDEN",
     "location": "ODEOMI, OGUN STATE",

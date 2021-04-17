@@ -39,7 +39,7 @@ const SectionHeading = styled.h2`
 function VideoSection() {
   const data = useStaticQuery(graphql`
     query {
-      interior: file(relativePath: { eq: "amazing-grace.jpg" }) {
+      interior: file(relativePath: { eq: "sitting-room.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
