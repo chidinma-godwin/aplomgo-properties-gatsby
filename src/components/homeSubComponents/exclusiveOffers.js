@@ -10,20 +10,13 @@ const SectionHeader = styled.h2`
 `
 
 const CustomCard = styled(Card)`
-  &&& {
-    border: 3px solid #b67f2e;
-    width: 80%;
-    margin: 0 auto;
+  border: 3px solid #b67f2e;
+  width: 80%;
+  margin: 0 auto;
+
+  @media (max-width: 700px) {
+    width: 100%;
   }
-  @media (max-width: 600px) {
-    width: 95%;
-  }
-  /* @media (min-width: 991.98px) {
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  } */
 `
 
 const CardHeader = styled(Card.Header)`
@@ -42,32 +35,6 @@ const CustomListGroup = styled(ListGroup)`
 `
 
 function ExclusiveOffers() {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     champion: file(relativePath: { eq: "champion.jpg" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 1000) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //     amazingGrace: file(relativePath: { eq: "amazing-grace-promo.jpg" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 1000) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //     exclusive: file(relativePath: { eq: "exclusive.jpg" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 1000) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <>
       <SectionHeader>Exclusive Offers</SectionHeader>
@@ -89,19 +56,6 @@ function ExclusiveOffers() {
           </CustomListGroup>
         </Card.Body>
       </CustomCard>
-      {/* </AboutCardDeck> */}
-
-      {/* <Row>
-        <BorderedImage sm={12} md={12} lg={4} className="mb-3 p-0">
-          <Img fluid={data.amazingGrace.childImageSharp.fluid} />
-        </BorderedImage>
-        <BorderedImage sm={12} md={12} lg={4} className="mb-3 p-0">
-          <Img fluid={data.champion.childImageSharp.fluid} />
-        </BorderedImage>
-        <BorderedImage sm={12} md={12} lg={4} className="mb-3 p-0">
-          <Img fluid={data.exclusive.childImageSharp.fluid} />
-        </BorderedImage>
-      </Row> */}
     </>
   )
 }

@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react"
-import { Row, Col, Spinner } from "react-bootstrap"
+import { Spinner } from "react-bootstrap"
 import YouTube from "react-youtube"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import LazyLoad from "react-lazyload"
-
-const CenteredColumn = styled(Col)``
 
 const UnLoadedVideo = styled.div`
   position: absolute;
@@ -20,11 +17,17 @@ const UnLoadedVideo = styled.div`
   align-items: center;
 `
 
-const VideoWrapper = styled(Col)`
+const VideoWrapper = styled.div`
   position: relative;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
 
   @media (max-width: 681px) {
     min-height: 300px;
+  }
+  @media (max-width: 700px) {
+    width: 100%;
   }
 `
 
@@ -66,7 +69,7 @@ function VideoSection() {
   }, [index, videoId])
 
   const opts = {
-    width: "90%",
+    width: "100%",
     height: "100%",
     playerVars: {
       origin: "https://aplomgo.com",
@@ -94,37 +97,27 @@ function VideoSection() {
   }
 
   return (
-    <Row className="mt-5 mb-5">
-      <VideoWrapper sm={12} md={6}>
-        <LazyLoad
-          height={"100%"}
-          placeholder={
-            <UnLoadedVideo>
-              <p>Loading video</p>
-              <Spinner animation="border" role="status" size="md">
-                <span className="sr-only">Loading...</span>
-              </Spinner>
-            </UnLoadedVideo>
-          }
-          once={true}
-        >
-          <VideoPlayer
-            videoId={currentVideoId || "46vPRO6bt6g"}
-            opts={opts}
-            onReady={videoReady}
-            onEnd={playNext}
-          />
-        </LazyLoad>
-      </VideoWrapper>
-      <CenteredColumn>
-        <SectionHeading>Affordable Housing for All</SectionHeading>
-        <p>
-          At Aplom, we are devoted to making homes affordable for everyone
-          irrespective of their income
-        </p>
-        <Img fluid={data.interior.childImageSharp.fluid} />
-      </CenteredColumn>
-    </Row>
+    <VideoWrapper className="mt-5 mb-5">
+      <LazyLoad
+        height={"100%"}
+        placeholder={
+          <UnLoadedVideo>
+            <p>Loading video</p>
+            <Spinner animation="border" role="status" size="md">
+              <span className="sr-only">Loading...</span>
+            </Spinner>
+          </UnLoadedVideo>
+        }
+        once={true}
+      >
+        <VideoPlayer
+          videoId={currentVideoId || "46vPRO6bt6g"}
+          opts={opts}
+          onReady={videoReady}
+          onEnd={playNext}
+        />
+      </LazyLoad>
+    </VideoWrapper>
   )
 }
 
