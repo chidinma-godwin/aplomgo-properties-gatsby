@@ -6,7 +6,7 @@ const router = express.Router()
 
 router.post("/", (req, res) => {
   const src = fs.createReadStream(
-    path.join("functions", "subscriptionForms", req.body.fileName)
+    path.resolve(__dirname, `subscriptionForms/${req.body.fileName}`)
   )
 
   res.writeHead(200, {
