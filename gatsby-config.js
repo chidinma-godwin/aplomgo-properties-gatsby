@@ -70,9 +70,5 @@ module.exports = {
       prefix: "/api",
       url: "http://localhost:57000",
     },
-    {
-      prefix: "/info",
-      url: "http://localhost:57000",
-    },
   ],
 }

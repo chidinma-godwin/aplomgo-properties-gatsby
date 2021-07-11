@@ -30,7 +30,7 @@ function NewsLetter({ block = true }) {
   const handleSubmit = async values => {
     await axios({
       method: "post",
-      url: "/info/newsletter",
+      url: "/api/newsletter",
       data: { email: values.email },
     })
       .then(res => {
