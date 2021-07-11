@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import { Spinner } from "react-bootstrap"
 import YouTube from "react-youtube"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
 import LazyLoad from "react-lazyload"
 
 const UnLoadedVideo = styled.div`
@@ -35,23 +34,7 @@ const VideoPlayer = styled(YouTube)`
   position: absolute;
 `
 
-const SectionHeading = styled.h2`
-  color: #b67f2e;
-`
-
 function VideoSection() {
-  const data = useStaticQuery(graphql`
-    query {
-      interior: file(relativePath: { eq: "sitting-room.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   const videoId = [
     "46vPRO6bt6g",
     "IQS6Ph2sha0",
