@@ -5,7 +5,7 @@ const path = require("path")
 const router = express.Router()
 
 router.post("/", (req, res) => {
-  const src = fs.createReadStream(
+  const file = fs.readFileSync(
     path.resolve(__dirname, `subscriptionForms/${req.body.fileName}`)
   )
 
@@ -14,8 +14,7 @@ router.post("/", (req, res) => {
     "Content-Disposition": "attachment; filename=subscription.pdf",
     "Content-Transfer-Encoding": "Binary",
   })
-
-  src.pipe(res)
+  res.end(file)
 })
 
 module.exports = router
